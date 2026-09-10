@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#dae2fd", "error-container": "#ffdad6", "surface-dim": "#d2d9f4", "surface-bright": "#faf8ff", "surface-container-highest": "#dae2fd", "tertiary-container": "#004b5f", "secondary-fixed-dim": "#2be19d", "on-primary": "#ffffff", "primary": "#003533", "on-primary-fixed": "#00201e", "on-error": "#ffffff", "primary-fixed": "#b3eee9", "on-secondary-container": "#00734d", "tertiary-fixed-dim": "#81d1f0", "on-secondary": "#ffffff", "outline": "#707978", "on-secondary-fixed": "#002113", "primary-fixed-dim": "#97d1cd", "primary-container": "#0a4d4a", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eef0ff", "secondary": "#006c48", "on-secondary-fixed-variant": "#005235", "tertiary-fixed": "#b9eaff", "inverse-surface": "#283044", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#004d62", "secondary-fixed": "#56feb7", "on-surface-variant": "#404947", "surface": "#faf8ff", "on-tertiary-container": "#6cbcdb", "tertiary": "#003341", "on-primary-fixed-variant": "#0e4f4c", "on-primary-container": "#83bdb8", "on-tertiary-fixed": "#001f29", "inverse-primary": "#97d1cd", "secondary-container": "#56feb7", "surface-tint": "#2d6764", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "background": "#faf8ff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container-high": "#e2e7ff", "surface-container": "#eaedff", "outline-variant": "#bfc8c7", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-tablet": "1.5rem", "space-2xl": "3rem", "container-max-width": "1280px", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-2xs": "0.25rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "space-sm": "0.75rem", "space-3xl": "4rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "gutter-desktop": "2rem" }, "fontFamily": { "body-lg": [ "Work Sans" ], "headline-lg": [ "Space Grotesk" ], "body-md": [ "Work Sans" ], "label-ticker": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "headline-xl-mobile": [ "Space Grotesk" ], "label-md": [ "Work Sans" ], "headline-md": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ], "caption": [ "Work Sans" ], "label-lg": [ "Work Sans" ], "body-sm": [ "Work Sans" ], "headline-xl": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "label-ticker": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "caption": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-44 w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex flex-col justify-between pt-space-xs pb-space-xs"><div class="flex items-center justify-between pb-space-2xs text-on-surface-variant font-label-md text-label-md"><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg">calendar_today</span>Thursday, October 24</span><span class="hidden sm:inline-block text-outline-variant">•</span><span class="hidden sm:flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg">sunny</span>Bangkok 31°C Fair</span><span class="hidden md:inline-block text-outline-variant">•</span><span class="hidden md:flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg text-secondary">air</span>AQI 42 Good</span></div><div class="flex items-center gap-space-sm"><span class="px-space-xs py-space-2xs bg-surface-container font-label-md text-label-md text-on-surface rounded-lg">EN</span><button class="flex items-center gap-space-2xs px-space-sm py-space-2xs bg-primary-container text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary transition-colors"><span class="material-symbols-outlined text-label-lg">mail</span>Get Newsletter</button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X57zC94FHu4ta3FNIzPx9-1pIGPUpN40jGsxC9u3evkiH6bHq2ecg0CpSgnFfg52dkz49S3NF5jV0b4ropbiJ11iN2Q8RP1h8Q6TWnXxBr4YwYdgbjCg2BVHm89qRzlykgQXx0GW7ilmDNOxwNtlJh6ZgRehgjRQoEVj09luQGkIO7RHskg2O_TPkhC0MfuQXnFWtRF8POzNb098T8dpBq0axsY7ZZV46Arh3ZD46grjNBDNgCq8HEPUa-HSDSln53sYbC7OXelGI"/></div></div><div class="flex items-center justify-between py-space-xs"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container font-headline-md text-headline-md font-bold">BML</div><div><div class="font-headline-lg text-headline-lg tracking-tight text-primary leading-none">BANGKOK METRO LIFE</div><div class="font-caption text-caption text-on-surface-variant tracking-wider uppercase mt-space-2xs">Bangkok Edition • English Daily</div></div></div></div><div class="flex items-center gap-space-xs"><div class="relative hidden sm:block w-56 lg:w-72"><span class="material-symbols-outlined absolute left-space-xs top-1/2 -translate-y-1/2 text-outline text-label-lg">search</span><input class="w-full pl-space-xl pr-space-xs py-space-xs bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:ring-1 focus:ring-primary" placeholder="Search stories, transit, dining..." type="text"/></div><button class="p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined">tune</span></button></div></div><div class="flex items-center justify-between pt-space-2xs"><nav class="flex items-center gap-space-xs overflow-x-auto whitespace-nowrap" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-2xs"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-2xs" data-path="home" href="index.html">Home</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="general" href="?category=general">General</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="food" href="?category=food">Food</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="travel" href="?category=travel">Travel</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="environment" href="?category=environment">Environment</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="transportation" href="?category=transportation">Transportation</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="social-media" href="?category=social-media">Social Media</a></nav><div class="hidden md:flex items-center gap-space-2xs bg-secondary-container px-space-sm py-space-2xs rounded-full text-on-secondary-container font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Transit Status: All Lines Normal</span></div></div></div></header><main class="w-full pt-44 bg-surface max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="flex flex-col w-full">
+<!-- Article Header Section -->
+<header class="w-full pt-space-md pb-space-lg">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-space-sm">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Transportation &amp; Urban Planning</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface">In-Depth Analysis</span>
+</nav>
+<!-- Tag & Read Time Pill -->
+<div class="flex items-center gap-space-sm mb-space-md flex-wrap">
+<span class="px-space-sm py-space-2xs bg-secondary-container text-on-secondary-container font-label-ticker text-label-ticker uppercase tracking-wider rounded-lg font-bold">
+        Transportation &amp; Urban Future
+      </span>
+<span class="flex items-center gap-space-2xs text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+        7 min read
+      </span>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<span class="flex items-center gap-space-2xs text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+        2.4k Views
+      </span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight max-w-4xl mb-space-md">
+      Bridging the Chao Phraya: How the New MRT Extensions Are Redefining Thonburi’s Urban Identity
+    </h1>
+<!-- Standfirst / Subdeck -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-space-lg leading-relaxed">
+      As the rail network expands into Bangkok’s historic western riverside, canalside communities, heritage shophouses, and emergent creative districts are entering a bold, transformative era.
+    </p>
+<!-- Byline & Action Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-container text-secondary-container flex items-center justify-center font-headline-sm font-bold shadow-sm">
+          MC
+        </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-2xs">
+<span class="font-label-lg text-label-lg text-primary font-bold">Marcus Chen</span>
+<span class="material-symbols-outlined text-[16px] text-secondary" title="Verified Author">verified</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">
+            Senior Urban Editor • Photography by BML Studio
+          </span>
+<span class="font-caption text-caption text-outline">
+            Published Thursday, October 24, 2025 • Bangkok Desk
+          </span>
+</div>
+</div>
+<!-- Quick Action Utilities -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-space-2xs rounded-lg self-start sm:self-auto">
+<button class="p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" id="fontDecBtn" title="Decrease font size">
+<span class="font-headline-sm text-headline-sm leading-none font-bold">A-</span>
+</button>
+<button class="p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" id="fontIncBtn" title="Increase font size">
+<span class="font-headline-sm text-headline-sm leading-none font-bold">A+</span>
+</button>
+<span class="text-outline-variant px-space-2xs">|</span>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs bg-surface-container-lowest text-primary rounded-lg shadow-sm hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Save</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Sticky Share & Progress Tracker Rail -->
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden mb-space-md">
+<div class="h-full bg-secondary transition-all duration-150" id="readProgress" style="width: 14%;"></div>
+</div>
+<!-- Hero Editorial Image -->
+<figure class="w-full mb-space-xl">
+<div class="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Cinematic editorial photograph of a sleek modern MRT elevated train crossing a massive modern bridge over the sunlit Chao Phraya River in Bangkok. Below, traditional wooden longtail boats cut through rippling teal water. In the background, Thonburi's mix of traditional wooden stilt houses and glittering golden temple stupas blends with contemporary glass high-rises under a clear tropical morning sky. Shot with crisp architectural symmetry and natural warm morning illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuUneWcJwE1V0iqD4itSWkr8jxg6Zw7vdI42PqXMsbjigkUd2pjEthsFl8f6I3IobS6HZ1hGT8QRSZcgykBhgyT6ehwmiSHKSolK1yBwjyo3Y-9FUvf5cxpagUVeGMwOVF6eNicTW-MnRk4ofh-y2FaYNofudK16OApzX3_kYH5NGRPmNyJgj5d8LAOS6jvSF9TP8QTNqzuNc4KIE0acwrxE_p8xpUHnMmuxR4N6DqstfqMC-ZSBv3cg"/>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent p-space-md flex items-end justify-between">
+<span class="text-on-primary font-label-ticker text-label-ticker tracking-widest uppercase bg-primary/60 px-space-xs py-space-2xs rounded backdrop-blur-sm">
+          Chao Phraya West Crossing • Bang Phlat Section
+        </span>
+</div>
+</div>
+<figcaption class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-2xs mt-space-xs px-space-2xs text-on-surface-variant font-caption text-caption">
+<span>Commuters boarding the elevated MRT Blue Line train overlooking the Chao Phraya River crossing near Bang Phlat.</span>
+<span class="text-outline font-label-md">Photo: Bangkok Metro Life Studio / Marcus Chen</span>
+</figcaption>
+</figure>
+<!-- Main Content Grid (8-col Editorial Body + 4-col Sidebar) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl mb-space-3xl">
+<!-- Left Column: Article Body -->
+<main class="lg:col-span-8 flex flex-col">
+<!-- Key Takeaways Box -->
+<section class="bg-surface-container-low p-space-lg rounded-xl mb-space-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-primary mb-space-sm">
+<span class="material-symbols-outlined text-secondary font-bold">bolt</span>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-wide font-bold">Executive Dispatch : Key Takeaways</h2>
+</div>
+<ul class="space-y-space-sm font-body-md text-body-md text-on-surface">
+<li class="flex items-start gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary mt-space-xs flex-shrink-0"></span>
+<span><strong>Commute Time Compression:</strong> Direct heavy-rail connections have reduced travel from Thonburi to the Sukhumvit Central Business District by up to 45 minutes during morning rush hours.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary mt-space-xs flex-shrink-0"></span>
+<span><strong>Heritage Influx:</strong> Historic canalside sois along Khlong Bangkok Yai are seeing a 60% surge in creative studios, boutique craft roasters, and architectural restoration efforts.</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary mt-space-xs flex-shrink-0"></span>
+<span><strong>Multi-Modal Convergence:</strong> Integrated piers at Bang Pho and Charan 13 allow frictionless transfers between electric commuter ferries and elevated mass transit lines.</span>
+</li>
+</ul>
+</section>
+<!-- Primary Body Text -->
+<article class="space-y-space-lg font-body-lg text-body-lg text-on-surface leading-relaxed" id="articleContent">
+<!-- Opening Paragraph with Drop Cap -->
+<p class="first-letter:font-headline-xl first-letter:text-headline-xl first-letter:font-bold first-letter:text-primary first-letter:float-left first-letter:mr-space-sm first-letter:leading-none">
+          For more than two centuries, the wide, meandering curves of the Chao Phraya River functioned as both the sacred cradle of Bangkok and its most stubborn physical divide. To cross from the glittering commercial towers of Silom and Sukhumvit into Thonburi’s shaded orchards and century-old canal alleyways was to step across a perceptible temporal threshold. While the eastern bank surged forward in concrete, steel, and high-speed monorails, the west held fast to a slower rhythm of wooden longtails, river barges, and multi-generational shophouses.
+        </p>
+<p>
+          Today, that psychological separation is evaporating in steel and precast concrete. The rapid completion of the MRT Blue Line loop, coupled with extensions deeper into western transit arteries, has fundamentally realigned Bangkok’s mental geography. Commuters boarding trains above the waters at Bang Phlat or descending underground beneath Sanam Chai are no longer merely bypassing the capital’s legendary surface gridlock—they are participating in an urban renaissance that is redefining what it means to live on the western bank.
+        </p>
+<!-- Dynamic Pull Quote -->
+<blockquote class="my-space-xl p-space-lg bg-surface-container rounded-xl shadow-sm">
+<div class="text-secondary font-display-hero text-headline-xl leading-none select-none">“</div>
+<p class="font-headline-md text-headline-md text-primary font-semibold -mt-space-xs mb-space-sm italic">
+            The rail network is no longer just moving commuters; it is stitching together two centuries of Bangkok’s split architectural history.
+          </p>
+<cite class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider not-italic">
+            — Dr. Somchai Prasert, Faculty of Architecture &amp; Urban Design, Chulalongkorn University
+          </cite>
+</blockquote>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight pt-space-sm">
+          The Living Canals: Conservation Meets Transit-Oriented Density
+        </h3>
+<p>
+          Nowhere is this friction and harmony more tangible than around Charan Sanitwong. Walk three minutes from the gleaming turnstiles of Bang Khun Non station, and the humming air conditioning of modern trains gives way to the ambient chatter of neighbourhood noodle vendors and the low murmur of longtail watercraft along Khlong Chak Phra.
+        </p>
+<p>
+          Unlike earlier downtown expansions that bulldozed historic fabric in favor of generic podium malls, Thonburi’s newest transit nodes are piloting a more measured, adaptive approach. Urban planners have designated strict pedestrian corridors connecting elevated platforms directly to public community piers, preserving the delicate waterfront ecology while bringing a steady footfall of young creatives, local patrons, and international urban travelers.
+        </p>
+<!-- Mid-article Infographic / Data Card -->
+<div class="my-space-xl bg-surface-container-lowest p-space-lg rounded-xl shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<span class="font-label-ticker text-label-ticker uppercase text-secondary font-bold">Transit Intelligence Metric</span>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Bangkok Rail Connectivity Growth: 2020 vs 2025</h4>
+</div>
+<span class="px-space-xs py-space-2xs bg-surface-container text-on-surface font-caption text-caption rounded">Source: MRTA &amp; BML Analytics</span>
+</div>
+<!-- Visual Bar Chart -->
+<div class="space-y-space-md pt-space-xs">
+<div>
+<div class="flex justify-between text-caption font-label-md mb-space-2xs">
+<span class="text-on-surface font-semibold">Total Operational Rapid Transit Stations</span>
+<span class="text-primary font-bold">236 stations (+68% vs 2020)</span>
+</div>
+<div class="w-full bg-surface-container-high h-4 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 58%;"></div>
+<div class="bg-secondary h-full" style="width: 42%;"></div>
+</div>
+<div class="flex justify-between text-caption text-on-surface-variant mt-1">
+<span>2020: 140 Stations</span>
+<span>2025: 236 Stations</span>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-caption font-label-md mb-space-2xs">
+<span class="text-on-surface font-semibold">Thonburi West-Bank Ridership Volume (Daily Commuters)</span>
+<span class="text-secondary font-bold">480,000 / day (+112%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-4 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 44%;"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 56%;"></div>
+</div>
+<div class="flex justify-between text-caption text-on-surface-variant mt-1">
+<span>2020: 226,000 Daily</span>
+<span>2025: 480,000 Daily</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg mt-space-sm flex items-center justify-between">
+<span class="text-caption text-on-surface-variant">Average Cross-River Transit Duration</span>
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-md font-bold text-secondary">11.4</span>
+<span class="font-caption text-caption text-on-surface-variant">minutes (down from 38.2 min)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Inline Image -->
+<figure class="my-space-xl">
+<div class="w-full aspect-[16/10] rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Street-level documentary photograph of a historic wooden canal shophouse in Thonburi Bangkok transformed into a modern artisan cafe with lush potted ferns. In the background above the roofline, the sleek concrete pillars and track of the elevated MRT line are visible against a soft golden afternoon sky. Young locals and commuters sit outside drinking iced matcha and espresso on wooden benches." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUa0SnAMlRydFKrz37LnuU1zs4yjKmH8OaATw_v7YuP8usux7EGw2edRK_EjsESa_MrrE_gnOeHLRV5fZUBreJy2KHrlWwFq0eDSHbP5Znziaui1E46dg_DOawehYRtWkstrDsf7vxDK8JC9Xzaf59fItRexgVomXcbhHw085985QsAX05y1o6Qy4S2VCrjn7h1VkZHBSegeVTQDAhmzRvE8v5verGgJm6QKvJGNBsPp12zzKKuFNcA"/>
+</div>
+<figcaption class="mt-space-2xs text-on-surface-variant font-caption text-caption px-space-2xs flex justify-between">
+<span>Adaptive reuse: A 70-year-old former rice trading shophouse operates as a neighborhood cafe beneath the shadow of Charan 13 station.</span>
+<span class="text-outline">BML Studio</span>
+</figcaption>
+</figure>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          The Creative Class Migration
+        </h3>
+<p>
+          Economic ripple effects have been swift. With commercial rents in Thonglor and Sathorn reaching record highs, independent ceramic studios, gallery collectives, and natural wine bars have turned their gaze across the water. Here, expansive square footage and historical character coexist with a seven-minute train connection into the city core.
+        </p>
+<p>
+          "When we opened our printmaking workshop near Tha Phra three years ago, friends thought we were moving to another province," laughs Pailin Kittisophon, co-founder of the Riverside Atelier project. "Now, half our students come straight from Asok on the MRT. The river is no longer an obstacle; it is our premier scenic backdrop."
+        </p>
+<p>
+          As city hall accelerates work on the southern extensions toward Phutthamonthon, the lessons of Thonburi’s transit transformation offer a masterclass for rapid-growth Asian capitals: mass transit succeeds most profoundly not when it flattens local culture, but when it serves as a bridge between ancestral identity and contemporary life.
+        </p>
+</article>
+<!-- Article Social Sharing & Feedback -->
+<div class="my-space-xl p-space-md bg-surface-container rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-primary">Share this story:</span>
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-on-surface flex items-center justify-center transition-colors shadow-sm" title="Share on Twitter / X">
+<span class="font-headline-sm font-bold text-sm">𝕏</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-on-surface flex items-center justify-center transition-colors shadow-sm" title="Share on LinkedIn">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm h-9 rounded-lg bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-on-surface transition-colors shadow-sm font-label-md text-label-md" id="copyBtn">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span id="copyText">Copy Link</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-caption text-caption">
+<span>Was this analysis helpful?</span>
+<button class="p-space-2xs rounded hover:bg-surface-container-highest text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span> Yes
+          </button>
+<button class="p-space-2xs rounded hover:bg-surface-container-highest text-outline font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">thumb_down</span> No
+          </button>
+</div>
+</div>
+<!-- Author Bio Box -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col sm:flex-row items-start gap-space-md mb-space-xl">
+<div class="w-16 h-16 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center font-headline-md font-bold flex-shrink-0">
+          MC
+        </div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-label-ticker text-label-ticker text-secondary uppercase font-bold">About the Author</span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md font-bold transition-colors">
+              + Follow Marcus
+            </button>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-2xs">Marcus Chen</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-normal mb-space-sm">
+            Marcus Chen is Bangkok Metro Life’s lead urban infrastructure writer focusing on Southeast Asian transit systems, heritage conservation, and spatial economics. A former commuter rail engineer, he has reported from Singapore, Tokyo, and Bangkok for over a decade.
+          </p>
+<div class="flex items-center gap-space-md text-caption text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">article</span>
+              142 Stories Published
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">mail</span>
+              m.chen@bangkokmetrolife.com
+            </span>
+</div>
+</div>
+</section>
+<!-- Discussion & Comments Section -->
+<section class="bg-surface-container-low p-space-lg rounded-xl mb-space-xl">
+<div class="flex items-center justify-between mb-space-md pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">forum</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Reader Discussion (18)</h3>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Editorial Guidelines Applied</span>
+</div>
+<!-- Add Comment Form -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm mb-space-lg">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-caption">
+              U
+            </div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Join the urban dialogue as Guest</span>
+</div>
+<textarea class="w-full bg-surface-container-low rounded-lg p-space-sm font-body-sm text-body-sm text-on-surface outline-none focus:ring-1 focus:ring-primary resize-none mb-space-xs" placeholder="Share your perspective on Thonburi's transit changes, station connections, or canal conservation..." rows="3"></textarea>
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-outline">Keep commentary civil, analytical, and respectful.</span>
+<button class="px-space-md py-space-xs bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm">
+              Post Comment
+            </button>
+</div>
+</div>
+<!-- Top Featured Comment -->
+<div class="space-y-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">Arisara V.</span>
+<span class="px-space-2xs py-0.5 bg-surface-container font-caption text-caption text-on-surface-variant rounded">Resident of Bang Phlat</span>
+</div>
+<span class="font-caption text-caption text-outline">3 hours ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-normal">
+              The station design at Bang Phlat truly respects the river breeze. My morning trip to Asok dropped from 1 hour 15 minutes of grueling bus exhaust to 28 air-conditioned minutes. Just hoping rents on small mom-and-pop shops remain manageable.
+            </p>
+<div class="flex items-center gap-space-md mt-space-xs text-caption text-on-surface-variant">
+<button class="hover:text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">favorite</span> 34</button>
+<button class="hover:text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">reply</span> Reply</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Right Column: Contextual Rail & Intelligence Sidebar -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Live Transit Status Module -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md">
+<div class="flex items-center justify-between mb-space-sm pb-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Transit Live Monitor</span>
+</div>
+<span class="font-label-ticker text-label-ticker text-secondary uppercase font-bold">Real-Time</span>
+</div>
+<div class="space-y-space-xs">
+<!-- MRT Blue Line -->
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-blue-600"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">MRT Blue Line</span>
+<span class="font-caption text-caption text-on-surface-variant">Loop &amp; Thonburi Crossings</span>
+</div>
+</div>
+<span class="font-label-ticker text-[11px] text-secondary font-bold bg-secondary-container px-space-2xs py-0.5 rounded">
+              ON TIME • 3 MIN
+            </span>
+</div>
+<!-- Chao Phraya Boat -->
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-orange-500"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Orange Flag Ferry</span>
+<span class="font-caption text-caption text-on-surface-variant">Sathorn — Nonthaburi</span>
+</div>
+</div>
+<span class="font-label-ticker text-[11px] text-secondary font-bold bg-secondary-container px-space-2xs py-0.5 rounded">
+              NORMAL FLOW
+            </span>
+</div>
+<!-- BTS Silom Line -->
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-green-700"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">BTS Silom Line</span>
+<span class="font-caption text-caption text-on-surface-variant">Taksin Crossing / Bang Wa</span>
+</div>
+</div>
+<span class="font-label-ticker text-[11px] text-secondary font-bold bg-secondary-container px-space-2xs py-0.5 rounded">
+              NORMAL • 4 MIN
+            </span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs text-center">
+<a class="text-caption font-label-md text-primary hover:text-primary-container font-semibold inline-flex items-center gap-1" href="#">
+            Open Interactive Bangkok Transit Map
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Station Location Spotlight Map Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md">
+<span class="font-label-ticker text-label-ticker text-secondary uppercase font-bold">Featured Transit Hub</span>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs">Bang Phlat MRT Station</h4>
+<p class="font-caption text-caption text-on-surface-variant mb-space-sm">
+          Interchange district connecting Charan Sanitwong Road directly with the riverside water taxi terminal.
+        </p>
+<div class="w-full h-44 rounded-lg bg-cover bg-center overflow-hidden shadow-inner" data-location="Bang Phlat MRT Station, Bangkok, Thailand" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4nMXUAUibhroQxozOnjMYnbQxpyiwecCWnlkSURNUZarx5ivcQxW4c-3gTRQgYs6gV83Shu7sVkj5F8o380cr-sBVDjIG6BBgPPYZcKrkcxhYsebmB_Xz2idX5R66I1lHlg51zJrrbPKiXW5A8u_ocgKHsyW0RdJHyedNq1mFGz_KgUCMk1R4X8oAd1T7BLcNydCnGIwYE9GFgIJ2CWv8w6EeIVxrldqFeh871sc6Z_uTBYQA9e0CvA')"></div>
+<div class="mt-space-xs flex items-center justify-between text-caption font-label-md text-on-surface-variant">
+<span>Coordinates: 13.784° N, 100.496° E</span>
+<span class="text-secondary font-bold">Station Code: BL07</span>
+</div>
+</div>
+<!-- In-Depth Series Promo Widget -->
+<div class="bg-primary text-on-primary p-space-lg rounded-xl shadow-md relative overflow-hidden">
+<div class="relative z-10">
+<span class="px-space-xs py-space-2xs bg-secondary text-primary font-label-ticker text-label-ticker uppercase font-bold rounded">
+            Special Report Series
+          </span>
+<h4 class="font-headline-md text-headline-md font-bold mt-space-sm mb-space-xs text-on-primary">
+            The Megacity Anatomy: Bangkok 2030
+          </h4>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-space-md">
+            Delivering weekly spatial analysis on transit expansions, smart urban density, and cultural preservation.
+          </p>
+<div class="flex gap-space-xs">
+<input class="w-full px-space-sm py-space-xs rounded bg-surface text-on-surface text-body-sm outline-none" placeholder="Your email address" type="email"/>
+<button class="px-space-md py-space-xs bg-secondary text-primary font-label-md text-label-md font-bold rounded hover:bg-secondary-container transition-colors flex-shrink-0">
+              Join
+            </button>
+</div>
+</div>
+</div>
+<!-- Most Read from the Transit Desk -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-sm">Most Read This Week</h4>
+<div class="space-y-space-md">
+<a class="group flex items-start gap-space-sm" href="#">
+<span class="font-display-hero text-headline-lg text-outline-variant font-bold leading-none group-hover:text-secondary transition-colors">01</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors leading-snug">
+                Why Bangkok’s Yellow and Pink Monorail Lines Are Changing Suburbia
+              </span>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Transit Analysis • 5 min read</span>
+</div>
+</a>
+<a class="group flex items-start gap-space-sm" href="#">
+<span class="font-display-hero text-headline-lg text-outline-variant font-bold leading-none group-hover:text-secondary transition-colors">02</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors leading-snug">
+                The Electric Boat Revolution on the Chao Phraya River
+              </span>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Mobility • 8 min read</span>
+</div>
+</a>
+<a class="group flex items-start gap-space-sm" href="#">
+<span class="font-display-hero text-headline-lg text-outline-variant font-bold leading-none group-hover:text-secondary transition-colors">03</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface group-hover:text-primary transition-colors leading-snug">
+                Night Walking Bangkok: Mapping Pedestrian Safety Across 12 Districts
+              </span>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Urban Design • 6 min read</span>
+</div>
+</a>
+</div>
+</div>
+</aside>
+</div>
+<!-- Read Next / Related Stories 3-Column Grid -->
+<section class="w-full pt-space-xl pb-space-2xl bg-surface-container-low px-space-md md:px-space-lg rounded-xl mb-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-space-lg gap-space-xs">
+<div>
+<span class="font-label-ticker text-label-ticker text-secondary uppercase font-bold">Curated Perspectives</span>
+<h3 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Read Next from the Newsroom</h3>
+</div>
+<a class="font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold flex items-center gap-1" href="#">
+        Browse All Stories <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1: Social Trends -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant evening street photography outside a Bangkok MRT elevated station with colorful pop-up night market stalls. Young locals eating skewers, steaming noodle bowls under warm hanging bulb strings, bustling friendly urban energy in the Bangkok twilight with neon reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJzQ1vyH-HAEUuxyw2RZsN-XEBD14AU6A_eKrEaMxDwlcOyH0ZjXLa4-2y8ix7equJw3_-TrC9omucmaIlhr-3XQ6tETTwyB-SANZ2vrwbcGAFQcFj2in7w9CHvzJ_B2HW5Jk_TIAgwujU7DK0-zr8HnwGYUEv7MOet-6T38diYlM3rH-tICEF_Sb-Lbyb10tKNSPiZq1YSK8hjGv0_6qhx6I0HQeVAI7g6sDjSTpL_RFWRBgX5MCH3A"/>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<div class="flex items-center gap-space-2xs mb-space-xs">
+<span class="font-label-ticker text-label-ticker text-secondary uppercase font-bold">Social Trends</span>
+<span class="text-outline-variant">•</span>
+<span class="font-caption text-caption text-on-surface-variant">4 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs leading-snug">
+<a class="hover:text-secondary transition-colors" href="#">
+              How Pop-Up Markets at MRT Stations Became Bangkok’s Favorite Evening Ritual
+            </a>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">
+            From quick pork skewers to micro-vintage vinyl stalls, commuter concourses are evolving into organic open-air social plazas.
+          </p>
+<div class="mt-auto pt-space-xs flex items-center justify-between font-caption text-caption text-outline">
+<span>By Siriporn L.</span>
+<span>Yesterday</span>
+</div>
+</div>
+</article>
+<!-- Card 2: Food & Dining -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up artisan food photography of an authentic Thai beef boat noodle bowl with fresh basil, crispy pork rinds, and rich dark herbal broth. Background features a rustic riverside Bangkok wooden diner with river light reflecting on the weathered teak counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLoeadj9peJqRBj0YkGG4ORUjKaI-u7DdOz_oewtmWW0-lcm-jfwt37gwBOh-1pBGqhOmWVsgjo3S6ZsbtJmyz-XW2kHEjPfG0kHNEcq6zzMXlZtMLY3mjRSqgx7sGZ9YwD0oghauxaopO7SpS2d3QSIHjXeG76_IXBH1th5g9JYEP2n7lDOCezDK3NHMYRROmNPQpMGt4p0dNLbcUbv_fuDttJGKBRKwk1ge6K_0gnOwGPbzHPjOneA"/>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<div class="flex items-center gap-space-2xs mb-space-xs">
+<span class="font-label-ticker text-label-ticker text-secondary uppercase font-bold">Food</span>
+<span class="text-outline-variant">•</span>
+<span class="font-caption text-caption text-on-surface-variant">5 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs leading-snug">
+<a class="hover:text-secondary transition-colors" href="#">
+              7 Riverside Noodle Shops Surviving the Rapid Modernization of Bang Phlat
+            </a>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">
+            These historic wooden shophouses have simmered broth recipes across four generations along the water’s edge.
+          </p>
+<div class="mt-auto pt-space-xs flex items-center justify-between font-caption text-caption text-outline">
+<span>By Ananda K.</span>
+<span>2 days ago</span>
+</div>
+</div>
+</article>
+<!-- Card 3: City Planning -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern architectural photography of a lush green pedestrianized neighborhood street in Phra Khanong, Bangkok. Permeable brick sidewalks, leafy rain gardens, bicycle lanes, and contemporary eco-friendly co-working facades illuminated by dappled tropical sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQu0o3KToQXdhGXhxGJjTT_GzcZpBfE5lrb9qQv41r1AznrXxSYHAxazg6QiKogYp2S8JzYchXyyOTUChO7jeH6L_SETeDCdZKhuOsBF5gUozjDluUDPNh73uOSToajMJzfELURqlYuiPdvDfo2Yiv7cQFWbZG15mQJvSXu1PmOsBTXyLLQQVfXVRjkFip0EN6EX9xXaO5T-RTq_8Cp0nminW-1OYNX51CdyFuIWJiPiPsDyj2uTifdw"/>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<div class="flex items-center gap-space-2xs mb-space-xs">
+<span class="font-label-ticker text-label-ticker text-secondary uppercase font-bold">City Planning</span>
+<span class="text-outline-variant">•</span>
+<span class="font-caption text-caption text-on-surface-variant">9 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs leading-snug">
+<a class="hover:text-secondary transition-colors" href="#">
+              The 15-Minute City Experiment: Real-Life Insights from Phra Khanong
+            </a>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">
+            How decentralized pocket parks, alleyway bike corridors, and local fresh grocers are proving urban life can thrive without gridlock.
+          </p>
+<div class="mt-auto pt-space-xs flex items-center justify-between font-caption text-caption text-outline">
+<span>By Marcus Chen</span>
+<span>Oct 21, 2025</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Vanilla JS for Micro-Interactions: Reading Progress, Copy Link & Font Resizer -->
+<script>
+    (function() {
+      // Reading Progress Bar
+      window.addEventListener('scroll', function() {
+        const docEl = document.documentElement;
+        const scrollTop = docEl.scrollTop || document.body.scrollTop;
+        const scrollHeight = docEl.scrollHeight - docEl.clientHeight;
+        const progress = (scrollTop / (scrollHeight || 1)) * 100;
+        const bar = document.getElementById('readProgress');
+        if (bar) {
+          bar.style.width = Math.min(Math.max(progress, 8), 100) + '%';
+        }
+      });
+
+      // Copy Link Interactive feedback
+      const copyBtn = document.getElementById('copyBtn');
+      const copyText = document.getElementById('copyText');
+      if (copyBtn && copyText) {
+        copyBtn.addEventListener('click', function() {
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(window.location.href);
+          }
+          copyText.textContent = 'Link Copied!';
+          setTimeout(function() {
+            copyText.textContent = 'Copy Link';
+          }, 2000);
+        });
+      }
+
+      // Font Size Toggler for Article Reading Comfort
+      const fontIncBtn = document.getElementById('fontIncBtn');
+      const fontDecBtn = document.getElementById('fontDecBtn');
+      const articleEl = document.getElementById('articleContent');
+      let currentSize = 18;
+
+      if (fontIncBtn && fontDecBtn && articleEl) {
+        fontIncBtn.addEventListener('click', function() {
+          if (currentSize < 24) {
+            currentSize += 2;
+            articleEl.style.fontSize = currentSize + 'px';
+            articleEl.style.lineHeight = (currentSize + 12) + 'px';
+          }
+        });
+        fontDecBtn.addEventListener('click', function() {
+          if (currentSize > 14) {
+            currentSize -= 2;
+            articleEl.style.fontSize = currentSize + 'px';
+            articleEl.style.lineHeight = (currentSize + 10) + 'px';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl py-space-2xl text-on-surface"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container font-headline-sm text-headline-sm font-bold">BML</div><span class="font-headline-sm text-headline-sm tracking-tight text-primary">BANGKOK METRO LIFE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant pr-space-xl">Independent, authoritative urban journalism capturing the pulse, architecture, culture, and transit landscape of Southeast Asia's premier metropolitan hub.</p><div class="flex flex-col gap-space-xs"><div class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">BML Morning Dispatch</div><div class="flex max-w-sm gap-space-xs"><input class="bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm rounded-lg flex-1 outline-none text-on-surface focus:ring-1 focus:ring-primary" placeholder="Your email address" type="email"/><button class="bg-primary text-on-primary px-space-md py-space-xs font-label-md text-label-md rounded-lg hover:bg-primary-container transition-colors">Subscribe</button></div></div></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">News Desks</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">City Governance</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Urban Real Estate</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Economy &amp; Retail</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Arts &amp; Heritage</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Environment &amp; Climate</a></li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">Transit &amp; City</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">BTS SkyTrain Radar</a></li><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">MRT Blue &amp; Purple Lines</a></li><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">Chao Phraya Express</a></li><li><a class="hover:text-on-surface transition-colors" data-path="travel" href="#">Neighborhood Guides</a></li><li><a class="hover:text-on-surface transition-colors" data-path="food" href="#">Night Market Maps</a></li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">About &amp; Connect</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="about-bml" href="#">About BML</a></li><li><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Editorial Standards</a></li><li><a class="hover:text-on-surface transition-colors" data-path="contact-newsroom" href="#">Newsroom Contact</a></li><li><a class="hover:text-on-surface transition-colors" data-path="advertising" href="#">Partner &amp; Advertise</a></li><li><a class="hover:text-on-surface transition-colors" data-path="social-media" href="#">Community Dispatch</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-caption text-caption text-on-surface-variant"><div>© 2024 Bangkok Metro Life (BML) Publishing Group Co., Ltd. All rights reserved. Bangkok Edition.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Ethics Policy</a></div></div></div></footer></body></html>
+
+<!-- Food & Travel Guide - Dining, Cafes & Urban Escapes -->
+# Product Requirements Document (PRD) & Design Brief
+## Bangkok Metro Life (BML) — English-Language Urban News & Transit Portal
+
+---
+
+### 1. Executive Summary & Brand Identity
+* **Product Name:** Bangkok Metro Life (BML)
+* **Tagline:** Bangkok Edition • English Daily
+* **Target Audience:** Urban professionals, expatriates, international travelers, digital nomads, and English-speaking Bangkok residents seeking credible, modern reporting on transit, urban design, food, travel, and digital culture.
+* **Core Value Proposition:** A transit-first, design-conscious editorial media platform that connects daily metropolitan mobility with lifestyle, dining, and cultural journalism across Bangkok.
+* **Language Requirement:** 100% English across all user-facing interfaces, metadata, and editorial copy.
+
+---
+
+### 2. Design System & Aesthetic Principles ("Minimal Metro")
+* **Visual Direction:** Modern, minimal, publication-grade editorial layout inspired by international architectural and journalistic publications (Monocle, Bloomberg CityLab, Wallpaper*).
+* **Color Palette:**
+  * **Primary Brand Accent:** Metro Teal / Forest Green (`#0a4d4a`) & Emerald Cyan Accent (`#2de29e`)
+  * **Backgrounds:** Clean Slate / Warm Editorial White (`#faf8ff`, `#ffffff`, `#f2f3ff`)
+  * **Text & Contrast:** Deep Charcoal / Obsidian (`#191c20`, `#41474d`) for crisp long-form typography and high legibility.
+  * **Status Indicators:** MRT Blue, BTS Green, Gold/Yellow line accents for transit telemetry badges.
+* **Typography:** Clean geometric grotesk headings with balanced editorial body copy optimized for comfortable scanning and deep reading.
+* **Iconography & Badges:** Compact pills, mono-line icons, real-time status pulses, and structured data tables.
+
+---
+
+### 3. Architecture & Information Hierarchy
+The platform is structured into four core page archetypes:
+
+#### 3.1. Editorial Portal (`Home`)
+* **Live Telemetry Bar:** Real-time Bangkok weather, UV index, and AQI monitoring.
+* **Breaking News & Transit Ticker:** Live status updates across major transit corridors (BTS, MRT, ARL, Chao Phraya Express).
+* **Lead Dispatch Hero:** Featured long-form investigative cover story paired with 24-hour top trending social trends.
+* **Curated Editorial Desks:** 4-column categorical preview showcasing:
+  * *Social Media & Tech Trends* (Viral phenomena, digital culture)
+  * *Transportation & Infrastructure* (Fleet decarbonization, rail expansions)
+  * *Food & Dining* (Michelin guides, midnight street food)
+  * *Travel & Living* (Neighborhood guides, architectural walks)
+* **Metropolitan Columnists:** Expert perspectives on urban economics, night economy, and climate resilience.
+* **Newsletter Acquisition:** High-converting BML Daily Dispatch sign-up module.
+
+#### 3.2. Transportation Hub (`Transportation`)
+* **Active Network Status Matrix:** Real-time operational cards with line headways and punctuality indicators for BTS, MRT, SRT, ARL, and River ferries.
+* **Express Route & Fare Estimator:** Interactive interchange calculator displaying duration, transfer stations, and EMV contactless fare estimations.
+* **First & Last Train Matrix:** Operational schedule reference table with downloadable high-resolution 2025 Metro Schematic Map.
+* **Desk Investigations & Playbooks:** Explanatory articles on contactless payment, canal commuting, and walkability indexes.
+* **Service Advisories & Incident Feed:** Live updates on escalator maintenance, station expansions, and river tide notices with Telegram channel integration.
+
+#### 3.3. Food & Travel Guide (`Food & Travel`)
+* **Transit-First Filter Matrix:** Multi-dimensional sorting by neighborhood (Ari, Thonglor, Yaowarat, Charoenkrung), walk radius from rail stations (<3 min, 3-7 min), and experience type.
+* **Magazine Featurette:** Deep-dive reviews with verified commuter ratings, walking routes, and operating hours.
+* **Curated Walking Itineraries:** Downloadable turn-by-turn GPX circuits combining heritage architecture, independent coffee roasters, and gallery hubs.
+* **Geospatial Food Map:** Integrated interactive map indexing 120+ vetted eateries along rapid transit lines.
+* **Verified Community Reviews:** Community-sourced reviews with reviewer verification badges.
+
+#### 3.4. Article & Story Detail View (`Article Detail`)
+* **Reading Comfort & Tools:** Sticky reading progress bar, estimated reading time, view metrics, and quick typography controls (`A-` / `A+`, bookmark/save).
+* **Executive Summary Box:** "Executive Dispatch" bulleted key takeaways for rapid executive scanning.
+* **Editorial Layout Elements:** Large architectural hero imagery with contextual captions, pull quotes, and responsive data comparison charts (e.g., 2020 vs 2025 rail connectivity growth).
+* **Author Credibility & Engagement:** Author bio badge with beat credentials, reader discussion module with community guidelines, and curated "Read Next" grid.
+
+---
+
+### 4. Technical & Functional Specifications
+1. **Responsive Web Design:** Desktop-first master grid (1200px+ content width) with flexible multi-column breakpoints.
+2. **Component Modularity:** Reusable global header (with brand mark, date/weather ribbon, global search, and newsletter trigger) and universal footer across all pages.
+3. **Transit Telemetry Hooks:** Designed to ingest GTFS / real-time transit API feeds (MRTA, BTSC, BMA).
+4. **Performance & Accessibility:** Semantic HTML5, high-contrast text ratios conforming to WCAG AA, and fast-loading modular components.
+
+---
+
+### 5. Roadmap & Future Scope
+* **Phase 2:** User accounts with saved transit routes and personalized neighborhood bookmarking.
+* **Phase 3:** Native offline progressive web app (PWA) caching for metro maps and walking itineraries.
+* **Phase 4:** Community submission portal for local food recommendations and transit incident reports.

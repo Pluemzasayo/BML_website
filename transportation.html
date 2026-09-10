@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#dae2fd", "error-container": "#ffdad6", "surface-dim": "#d2d9f4", "surface-bright": "#faf8ff", "surface-container-highest": "#dae2fd", "tertiary-container": "#004b5f", "secondary-fixed-dim": "#2be19d", "on-primary": "#ffffff", "primary": "#003533", "on-primary-fixed": "#00201e", "on-error": "#ffffff", "primary-fixed": "#b3eee9", "on-secondary-container": "#00734d", "tertiary-fixed-dim": "#81d1f0", "on-secondary": "#ffffff", "outline": "#707978", "on-secondary-fixed": "#002113", "primary-fixed-dim": "#97d1cd", "primary-container": "#0a4d4a", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eef0ff", "secondary": "#006c48", "on-secondary-fixed-variant": "#005235", "tertiary-fixed": "#b9eaff", "inverse-surface": "#283044", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#004d62", "secondary-fixed": "#56feb7", "on-surface-variant": "#404947", "surface": "#faf8ff", "on-tertiary-container": "#6cbcdb", "tertiary": "#003341", "on-primary-fixed-variant": "#0e4f4c", "on-primary-container": "#83bdb8", "on-tertiary-fixed": "#001f29", "inverse-primary": "#97d1cd", "secondary-container": "#56feb7", "surface-tint": "#2d6764", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "background": "#faf8ff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container-high": "#e2e7ff", "surface-container": "#eaedff", "outline-variant": "#bfc8c7", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-tablet": "1.5rem", "space-2xl": "3rem", "container-max-width": "1280px", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-2xs": "0.25rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "space-sm": "0.75rem", "space-3xl": "4rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "gutter-desktop": "2rem" }, "fontFamily": { "body-lg": [ "Work Sans" ], "headline-lg": [ "Space Grotesk" ], "body-md": [ "Work Sans" ], "label-ticker": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "headline-xl-mobile": [ "Space Grotesk" ], "label-md": [ "Work Sans" ], "headline-md": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ], "caption": [ "Work Sans" ], "label-lg": [ "Work Sans" ], "body-sm": [ "Work Sans" ], "headline-xl": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "label-ticker": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "caption": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-44 w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex flex-col justify-between pt-space-xs pb-space-xs"><div class="flex items-center justify-between pb-space-2xs text-on-surface-variant font-label-md text-label-md"><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg">calendar_today</span>Thursday, October 24</span><span class="hidden sm:inline-block text-outline-variant">•</span><span class="hidden sm:flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg">sunny</span>Bangkok 31°C Fair</span><span class="hidden md:inline-block text-outline-variant">•</span><span class="hidden md:flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg text-secondary">air</span>AQI 42 Good</span></div><div class="flex items-center gap-space-sm"><span class="px-space-xs py-space-2xs bg-surface-container font-label-md text-label-md text-on-surface rounded-lg">EN</span><button class="flex items-center gap-space-2xs px-space-sm py-space-2xs bg-primary-container text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary transition-colors"><span class="material-symbols-outlined text-label-lg">mail</span>Get Newsletter</button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X57zC94FHu4ta3FNIzPx9-1pIGPUpN40jGsxC9u3evkiH6bHq2ecg0CpSgnFfg52dkz49S3NF5jV0b4ropbiJ11iN2Q8RP1h8Q6TWnXxBr4YwYdgbjCg2BVHm89qRzlykgQXx0GW7ilmDNOxwNtlJh6ZgRehgjRQoEVj09luQGkIO7RHskg2O_TPkhC0MfuQXnFWtRF8POzNb098T8dpBq0axsY7ZZV46Arh3ZD46grjNBDNgCq8HEPUa-HSDSln53sYbC7OXelGI"/></div></div><div class="flex items-center justify-between py-space-xs"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container font-headline-md text-headline-md font-bold">BML</div><div><div class="font-headline-lg text-headline-lg tracking-tight text-primary leading-none">BANGKOK METRO LIFE</div><div class="font-caption text-caption text-on-surface-variant tracking-wider uppercase mt-space-2xs">Bangkok Edition • English Daily</div></div></div></div><div class="flex items-center gap-space-xs"><div class="relative hidden sm:block w-56 lg:w-72"><span class="material-symbols-outlined absolute left-space-xs top-1/2 -translate-y-1/2 text-outline text-label-lg">search</span><input class="w-full pl-space-xl pr-space-xs py-space-xs bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:ring-1 focus:ring-primary" placeholder="Search stories, transit, dining..." type="text"/></div><button class="p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined">tune</span></button></div></div><div class="flex items-center justify-between pt-space-2xs"><nav class="flex items-center gap-space-xs overflow-x-auto whitespace-nowrap" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-2xs"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-2xs" data-path="home" href="index.html">Home</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="general" href="?category=general">General</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="food" href="?category=food">Food</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="travel" href="?category=travel">Travel</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="environment" href="?category=environment">Environment</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="transportation" href="?category=transportation">Transportation</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="social-media" href="?category=social-media">Social Media</a></nav><div class="hidden md:flex items-center gap-space-2xs bg-secondary-container px-space-sm py-space-2xs rounded-full text-on-secondary-container font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Transit Status: All Lines Normal</span></div></div></div></header><main class="w-full pt-44 bg-surface max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="flex flex-col w-full">
+<!-- Live Transit Ribbon (Minimal Metro Editorial Ticker) -->
+<section class="w-full bg-primary-container text-on-primary py-space-xs px-space-md rounded-xl shadow-sm mb-space-xl flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-2xs bg-secondary-container text-on-secondary-container px-space-sm py-space-2xs rounded-full font-label-ticker text-label-ticker tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>LIVE RADAR</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-surface-bright">All Bangkok Rail Lines &amp; River Corridors Operating Normally</span>
+<span class="hidden lg:inline text-on-primary-container text-caption font-caption">• Systemwide Punctuality: 99.4%</span>
+</div>
+<div class="flex items-center gap-space-md text-caption font-caption text-on-primary-container">
+<span class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-label-md">schedule</span>
+        Updated 2 mins ago
+      </span>
+<button class="hover:text-surface-bright flex items-center gap-space-2xs transition-transform active:rotate-180 duration-300" id="refresh-status-btn">
+<span class="material-symbols-outlined text-label-md">sync</span>
+<span>Refresh</span>
+</button>
+</div>
+</section>
+<!-- Network Overview & Real-Time Status Grid -->
+<section class="w-full mb-space-2xl">
+<div class="flex items-baseline justify-between mb-space-md">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-bold">METROPOLITAN RAPID TRANSIT AUTHORITY &amp; BTSC</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Active Network Status</h2>
+</div>
+<div class="flex items-center gap-space-2xs font-caption text-caption text-on-surface-variant">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>On-Time Dispatch</span>
+</div>
+</div>
+<!-- Rapid Transit Line Cards Mosaic -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-space-xs">
+<!-- BTS Sukhumvit -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">BTS</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#70c042] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Sukhumvit</div>
+<div class="font-caption text-caption text-on-surface-variant">2.5 min peak</div>
+</div>
+<!-- BTS Silom -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">BTS</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#007a3d] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Silom Line</div>
+<div class="font-caption text-caption text-on-surface-variant">3.8 min peak</div>
+</div>
+<!-- MRT Blue -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">MRT</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#004b93] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Blue Circle</div>
+<div class="font-caption text-caption text-on-surface-variant">3.5 min peak</div>
+</div>
+<!-- MRT Purple -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">MRT</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#75267e] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Purple Line</div>
+<div class="font-caption text-caption text-on-surface-variant">5.0 min peak</div>
+</div>
+<!-- MRT Yellow -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">MRT</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#f9bc00] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Yellow Mono</div>
+<div class="font-caption text-caption text-on-surface-variant">6.0 min avg</div>
+</div>
+<!-- MRT Pink -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">MRT</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#f17ca3] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Pink Mono</div>
+<div class="font-caption text-caption text-on-surface-variant">5.5 min avg</div>
+</div>
+<!-- SRT Red Lines -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">SRT</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#c00418] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Red Lines</div>
+<div class="font-caption text-caption text-on-surface-variant">10 min headway</div>
+</div>
+<!-- ARL Airport Link -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">ARL</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#8b1538] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Airport Link</div>
+<div class="font-caption text-caption text-on-surface-variant">8 min Suvarnabhumi</div>
+</div>
+<!-- Chao Phraya Boats -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">RIVER</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="h-1 w-full bg-[#008d96] rounded-full mb-space-xs"></div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Chao Phraya</div>
+<div class="font-caption text-caption text-on-surface-variant">Regular Tides</div>
+</div>
+</div>
+</section>
+<!-- Interactive Routing & Commuter Utility Bento -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-3xl">
+<!-- Interactive Fare & Transfer Calculator (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-xl rounded-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary font-bold">directions_subway</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">Express Route &amp; Fare Estimator</span>
+</div>
+<span class="bg-surface-container px-space-xs py-space-2xs rounded text-caption font-caption text-primary-container font-semibold">EMV Contactless Supported</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Calculate door-to-door transit times, interchange points, and standard single-journey token or contactless card fares across Bangkok's integrated rail system.</p>
+<!-- Form Selectors -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium">Origin Station</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-xs top-1/2 -translate-y-1/2 text-secondary text-label-lg">trip_origin</span>
+<select class="w-full pl-space-xl pr-space-md py-space-xs bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface-container-lowest" id="origin-station">
+<option data-lines="BTS Sukhumvit / Silom" value="siam">Siam Central (BTS CEN)</option>
+<option data-lines="BTS Sukhumvit / MRT Blue" value="asok">Asok / Sukhumvit (BTS E4 / MRT BL22)</option>
+<option data-lines="BTS Sukhumvit" value="phrom-phong">Phrom Phong (BTS E5)</option>
+<option data-lines="MRT Blue / SRT Red" value="bang-sue">Krung Thep Aphiwat / Bang Sue (MRT BL11)</option>
+<option data-lines="BTS Silom / River Ferry" value="saphan-taksin">Saphan Taksin (BTS S6 - Sathorn Pier)</option>
+<option data-lines="BTS Sukhumvit / MRT Blue" value="mo-chit">Mo Chit / Chatuchak (BTS N8 / MRT BL12)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium">Destination Station</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-xs top-1/2 -translate-y-1/2 text-error text-label-lg">location_on</span>
+<select class="w-full pl-space-xl pr-space-md py-space-xs bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface-container-lowest" id="dest-station">
+<option data-lines="MRT Blue / SRT Red" value="bang-sue">Krung Thep Aphiwat / Bang Sue (MRT BL11)</option>
+<option data-lines="BTS Gold / River Boat" value="iconsiam">Charoen Nakhon - ICONSIAM (BTS G2)</option>
+<option data-lines="ARL Airport Link" value="suvarnabhumi">Suvarnabhumi Airport (ARL A1)</option>
+<option data-lines="BTS Silom / MRT Blue" value="sala-daeng">Silom / Sala Daeng (BTS S2 / MRT BL26)</option>
+<option data-lines="BTS Sukhumvit" value="thong-lo">Thong Lo (BTS E6)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Dynamic Output Display -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md w-full md:w-auto">
+<div class="bg-primary-container text-secondary-container p-space-sm rounded-lg flex flex-col items-center justify-center min-w-[76px]">
+<span class="font-headline-lg text-headline-lg font-bold leading-none" id="route-time">24</span>
+<span class="font-caption text-caption text-surface-bright">MINUTES</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-semibold" id="route-interchange">1 Transfer: Asok (MRT/BTS)</div>
+<div class="font-caption text-caption text-on-surface-variant" id="route-details">Direct rail connection • Distance 11.2 km</div>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs self-end md:self-auto">
+<span class="font-caption text-caption text-on-surface-variant uppercase font-semibold">Estimated Fare:</span>
+<span class="font-headline-lg text-headline-lg font-bold text-primary" id="route-fare">฿47</span>
+<span class="font-caption text-caption text-on-surface-variant">THB</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between text-caption font-caption text-on-surface-variant gap-space-xs">
+<span class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-label-md text-secondary">contactless</span>
+          Visa / Mastercard contactless tap eligible at all MRT Blue, Purple &amp; SRT gates
+        </span>
+<a class="text-secondary font-semibold hover:underline" href="#payment-guide">View Accepted Fare Cards →</a>
+</div>
+</div>
+<!-- Operating Timetable & Quick Reference Sheet (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Last Train & First Train Tracker -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex-1">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">First &amp; Last Train Matrix</h3>
+<span class="material-symbols-outlined text-on-surface-variant text-label-lg">schedule</span>
+</div>
+<div class="space-y-space-sm font-body-sm text-body-sm">
+<div class="flex items-center justify-between py-space-2xs bg-surface-container-low px-space-sm rounded">
+<div>
+<span class="font-semibold text-on-surface">BTS Sukhumvit (Both Ways)</span>
+<div class="font-caption text-caption text-on-surface-variant">Khu Khot ↔ Kheha</div>
+</div>
+<div class="text-right">
+<span class="font-semibold text-primary">05:15 — 00:00</span>
+<div class="font-caption text-caption text-secondary font-medium">Headway: 3-5m</div>
+</div>
+</div>
+<div class="flex items-center justify-between py-space-2xs bg-surface-container-low px-space-sm rounded">
+<div>
+<span class="font-semibold text-on-surface">MRT Blue Line (Loop)</span>
+<div class="font-caption text-caption text-on-surface-variant">Tha Phra ↔ Bang Sue ↔ Lak Song</div>
+</div>
+<div class="text-right">
+<span class="font-semibold text-primary">06:00 — 23:55</span>
+<div class="font-caption text-caption text-secondary font-medium">Headway: 3.5-7m</div>
+</div>
+</div>
+<div class="flex items-center justify-between py-space-2xs bg-surface-container-low px-space-sm rounded">
+<div>
+<span class="font-semibold text-on-surface">Airport Rail Link (ARL)</span>
+<div class="font-caption text-caption text-on-surface-variant">Phaya Thai ↔ Suvarnabhumi</div>
+</div>
+<div class="text-right">
+<span class="font-semibold text-primary">05:30 — 00:08</span>
+<div class="font-caption text-caption text-secondary font-medium">Flat Express Frequency</div>
+</div>
+</div>
+<div class="flex items-center justify-between py-space-2xs bg-surface-container-low px-space-sm rounded">
+<div>
+<span class="font-semibold text-on-surface">Chao Phraya Orange Flag</span>
+<div class="font-caption text-caption text-on-surface-variant">Nonthaburi ↔ Wat Rajsingkorn</div>
+</div>
+<div class="text-right">
+<span class="font-semibold text-primary">06:00 — 18:30</span>
+<div class="font-caption text-caption text-tertiary font-medium">฿16 Flat Fare</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Download Card -->
+<div class="bg-primary text-on-primary p-space-md rounded-xl shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined">map</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-semibold">2025 Metro Schematic Map</div>
+<div class="font-caption text-caption text-surface-variant">High-Resolution PDF (English &amp; Thai Bilingual)</div>
+</div>
+</div>
+<button class="px-space-md py-space-xs bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded font-bold hover:bg-secondary transition-colors flex items-center gap-space-2xs whitespace-nowrap">
+<span class="material-symbols-outlined text-label-md">download</span>
+          Download
+        </button>
+</div>
+</div>
+</section>
+<!-- Featured Lead Editorial Article -->
+<section class="w-full mb-space-3xl">
+<div class="relative bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 group">
+<!-- Left 7 cols: Image with scrim overlay -->
+<div class="lg:col-span-7 relative h-72 sm:h-96 lg:h-auto min-h-[340px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Editorial photograph of an elevated Bangkok BTS Skytrain smoothly curving past futuristic glass skyscrapers at twilight, with motion blur streaks of neon city headlights below in Bangkok's Sukhumvit commercial center, high editorial magazine standard, emerald and slate architectural tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1uRWbkGj4jdDr-23g5UE9nO7mu77eOJMxT9CcDO1sLRlFeMtFMHfue5DOZAuWD2zg_m_d6EhsRHBs8EnD0ercAICRw_9ZWc25j9kP7BIvW9pNSLZBqWyeEQEHQBi3aHlVsFWwgN1IcyyTeyrxSib46IIUCcN_8vmsbrqEpRj-OLP3aomTBSF2NAkGyeyJioVCwkxg1uzLv5HMOyWxfEfIoMy80U7EYpPSnXJdHS_vzlF89YLtmtQbZg"/>
+<div class="absolute top-space-md left-space-md bg-primary-container/90 backdrop-blur-sm text-secondary-container px-space-sm py-space-2xs rounded font-label-ticker text-label-ticker font-bold tracking-wider uppercase">
+          METRO SPECIAL REPORT
+        </div>
+</div>
+<!-- Right 5 cols: Story Content -->
+<div class="lg:col-span-5 p-space-xl lg:p-space-2xl flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<div class="flex items-center gap-space-xs font-caption text-caption text-on-surface-variant mb-space-xs">
+<span class="material-symbols-outlined text-label-md text-secondary">verified</span>
+<span>By Thanawat Srisuwan, Urban Infrastructure Editor</span>
+<span>•</span>
+<span>6 min read</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold leading-tight mb-space-md group-hover:text-secondary transition-colors">
+            The Complete 2025 Bangkok Transit Map: Upcoming Extensions, Interchange Hubs, and Contactless Payment Updates
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+            Bangkok's sprawling public transit footprint is undergoing its most radical transformation since the Skytrain first opened in 1999. With the Orange Line eastern section completing trial runs and universal EMV credit card integration accelerating across state-run concessions, here is your definitive field guide to crossing the metropolis without stress.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs bg-surface-container font-label-md text-label-md text-primary font-semibold rounded">Orange Line</span>
+<span class="px-space-xs py-space-2xs bg-surface-container font-label-md text-label-md text-primary font-semibold rounded">Single-Ticket Policy</span>
+</div>
+<a class="font-label-lg text-label-lg font-bold text-secondary hover:text-primary flex items-center gap-space-2xs group-hover:translate-x-1 transition-all" href="#">
+            Read Full Briefing
+            <span class="material-symbols-outlined text-label-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- In-Depth Mobility & Urban Infrastructure News Grid (4 Columns) -->
+<section class="w-full mb-space-3xl">
+<div class="flex items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-bold">DESK INVESTIGATIONS</span>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Mobility, Fleets &amp; Civic Infrastructure</h3>
+</div>
+<a class="font-label-lg text-label-lg text-primary hover:text-secondary font-semibold hidden sm:inline-flex items-center gap-space-2xs" href="#">
+        View All Mobility News →
+      </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Article Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern sleek electric catamaran river ferry gliding silently down Bangkok's Chao Phraya River with the Grand Palace and Wat Arun visible in the soft morning mist, cinematic documentary photography with subtle turquoise river reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF50xSO9rTP6ltLF4Axkdcets3cM_ZjBC30AKMhJ_sVuefNWgkKtuz2zr9MdHkBv7EHJCo1sNkgAQwg9efBlpnM6IbkOAKwTcCv8j_h7oBpCF9zB6MklFcAbAQ3rtZBgCvEcF0h4YFG1_oLcmXvl0uATl6gwwAPBIrq1HU74S6dCHv1yp4JtM0SGErOpy0pfM7Hpk730l75uihBkCaOWHWv7k7Jslby-m0jz6ae6cpo02iNpGC7rxsvg"/>
+<span class="absolute bottom-space-xs left-space-xs bg-primary/80 backdrop-blur-xs text-on-primary text-caption font-caption px-space-xs py-space-2xs rounded">RIVER MOBILITY</span>
+</div>
+<div class="p-space-md">
+<div class="font-caption text-caption text-on-surface-variant mb-space-2xs">Chao Phraya Express • 4h ago</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-secondary transition-colors mb-space-xs">
+              Chao Phraya Electric Catamarans: Commuting Along the River Just Got Silent
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Over 28 lithium-powered catamarans have entered revenue service on the Chao Phraya, slashing exhaust fumes and cutting dockside embarkation wait times by 40 percent.
+            </p>
+</div>
+</div>
+<div class="p-space-md pt-0 font-label-md text-label-md text-secondary font-semibold flex items-center gap-space-2xs">
+          Explore Route &amp; Piers →
+        </div>
+</article>
+<!-- Article Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Contemporary wide pedestrian sidewalk in central Bangkok with landscaped bioswales, tactile paving for accessibility, street trees providing shade, and cyclists riding alongside in a designated green lane, daylight modern urban planning photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw8engw1NNovYIpRXA7RF2n-h-wYXuM8UHtR3jP1240y00n3PSlMrwBHYEwg70vs7HQvqDqG6WjE5VcHT5QJnh82_sOEkyGkV3GrIVw-FLHX8VTJBxELGn1RpvQvl5vnSroTzwO8Rz-5ZDijNYuUplVJsxv0Yplk1-fGpDOu9uzof1KIuz-AWoAbL29iWCJ29Ow90qw57_TP2_-SM_NnbfFZGpVpYH4-R2KRVSgigrcluYZd3rWRoutA"/>
+<span class="absolute bottom-space-xs left-space-xs bg-primary/80 backdrop-blur-xs text-on-primary text-caption font-caption px-space-xs py-space-2xs rounded">CIVIC MASTERPLAN</span>
+</div>
+<div class="p-space-md">
+<div class="font-caption text-caption text-on-surface-variant mb-space-2xs">City Hall Dispatch • Yesterday</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-secondary transition-colors mb-space-xs">
+              Bangkok's Walkability Index: City Hall's Masterplan for 50km of Renovated Sidewalks
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Governor Chadchart's signature sidewalk repaving initiative expands to Sukhumvit, Silom, and Thong Lo with standardized tactile pavements and utility cable undergrounding.
+            </p>
+</div>
+</div>
+<div class="p-space-md pt-0 font-label-md text-label-md text-secondary font-semibold flex items-center gap-space-2xs">
+          Interactive Map →
+        </div>
+</article>
+<!-- Article Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow" id="payment-guide">
+<div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up shot of a passenger tapping a modern metallic debit card against an electronic contactless transit turnstile reader at a bustling Bangkok MRT subway station, crisp focus, tech-forward urban feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyC0FPBKHE4t7t9zJBJuE3Z3ltf6gebsaIMTAeRPskCAyTs_L2lUQq20GEBCaGNjMUcSaD9Jf_7mnrUwy6nu2a0CUF2PtSTREak0FkqhB-zVjoXRJH8qwdmYF4oWzBxmw192xgrzFhh5bFwXY5vcVgS2BM4W8w5QNFwyI2JybjIv_YN_9JNZSFsuwh28R6HZ3cJloUhN7nt_lTAE_i6VdRf8CSocew5GCaaisiv4th4oWkMvStvND7SQ"/>
+<span class="absolute bottom-space-xs left-space-xs bg-primary/80 backdrop-blur-xs text-on-primary text-caption font-caption px-space-xs py-space-2xs rounded">TICKETING TECH</span>
+</div>
+<div class="p-space-md">
+<div class="font-caption text-caption text-on-surface-variant mb-space-2xs">Smart Fare Systems • Oct 22</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-secondary transition-colors mb-space-xs">
+              Rabbit Card &amp; EMV Contactless: Where You Can Now Tap Your Credit Card on Bangkok Rails
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              A comprehensive breakdown of where international Visa and Mastercards work immediately at turnstiles, and where commuters still need stored-value Rabbit cards.
+            </p>
+</div>
+</div>
+<div class="p-space-md pt-0 font-label-md text-label-md text-secondary font-semibold flex items-center gap-space-2xs">
+          Fare System Breakdown →
+        </div>
+</article>
+<!-- Article Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern high speed aerodynamic passenger train on an elevated viaduct cutting across the outskirts of Bangkok near Don Mueang, bright sunny skies with architectural overhead catenary structures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJCwwGo02QmOdyW8GGMypW8qbynzwPr63EzzzjvCf5JJo4KiLltJsCocqE2-_Uoy8lipkR6l5WD8RuAMgAxV-95BJBzwiJzQlbgu6mycTMZykaiCYcfR5yAr9bJGHIkNc7CfIwWXuzcBDokSyIQAwXB7x9Md4ymb7Red2gouDQRoOfVNBuqE9hj4zuUAuD6GuzS8s3icLzYC5TT-zoe17p3KQD0Hk38JWBQKDkfwiDrGWnv1SIw49A-Q"/>
+<span class="absolute bottom-space-xs left-space-xs bg-primary/80 backdrop-blur-xs text-on-primary text-caption font-caption px-space-xs py-space-2xs rounded">AIRPORT CORRIDORS</span>
+</div>
+<div class="p-space-md">
+<div class="font-caption text-caption text-on-surface-variant mb-space-2xs">Mega-Projects • Oct 20</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-secondary transition-colors mb-space-xs">
+              Airport Rail Link vs. High-Speed Rail: What Commuters Need to Know About the Dual-Airport Link
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Status review of the long-awaited Three-Airport High-Speed Railway connecting Don Mueang (DMK), Suvarnabhumi (BKK), and U-Tapao, including current express shuttle options.
+            </p>
+</div>
+</div>
+<div class="p-space-md pt-0 font-label-md text-label-md text-secondary font-semibold flex items-center gap-space-2xs">
+          Read Project Timeline →
+        </div>
+</article>
+</div>
+</section>
+<!-- Essential Guides & Service Advisories Split Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl mb-space-3xl">
+<!-- Left Column: Step-by-Step City Guides (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-bold">COMMUTER PLAYBOOKS</span>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">First-Hand Transit Guides</h3>
+</div>
+<!-- Guide 1: First-Time BTS/MRT User Handbook -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row gap-space-md items-center">
+<div class="w-full sm:w-44 h-36 flex-shrink-0 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Interior of a clean air-conditioned Bangkok BTS Skytrain carriage filled with polite diverse international commuters looking at digital route maps over the sliding doors, crisp editorial lifestyle photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSV_hr8Zr2rlZPyHPAs5z9UuBkr1T-7ikHV5Qiur3m_R1Gmg-l7JfoObEfE_yNgs8ms5_yOABLvx1aMKXKF5hqe77TGQm71o_hgnZ3kW4RQb9mlCe-Mit8xbFqjAQN6uHydwo7g0l1_zP1PRsUEEHNVkUTK12DDHWZ6ji84rAA7WYgtcOKgwS7PfRxPkbiADtApK0UqaLb5enBCBgHaKEGX4Vs8aEv112Csnn12Ms-TrsaWNxbssCCnw"/>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-space-2xs mb-space-2xs">
+<span class="bg-surface-container-highest px-space-xs py-space-2xs text-caption font-caption text-primary rounded font-bold">ESSENTIAL FIELD GUIDE</span>
+<span class="text-caption font-caption text-on-surface-variant">Updated for Q4 2024</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs">
+            First Time in Bangkok? Essential Guide to BTS Skytrain &amp; MRT Subways for Expats and Travelers
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Everything you need to master ticketing counters, transfer interchanges at Siam and Asok, air conditioning etiquette, and navigating peak rush hours like a pro.
+          </p>
+<a class="font-label-md text-label-md text-secondary font-bold flex items-center gap-space-2xs hover:underline" href="#">
+            Read Complete Survival Guide →
+          </a>
+</div>
+</div>
+<!-- Guide 2: Khlong Saen Saep Canal Navigation -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row gap-space-md items-center">
+<div class="w-full sm:w-44 h-36 flex-shrink-0 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Wooden commuter canal boat creating spray along Bangkok's historic Khlong Saen Saep waterway with blue tarpaulin shields raised, passengers stepping off gracefully onto a bustling pier at Pratunam, vibrant travel photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACkmPsmaSTNLL9EQ5nsTsBTR89O8P4iSNu-0aO_mcEcQS4iQLdGGH8NMwDcKNK-M4z6gxnB5L1XfaMF22UaUZl6dBMeVNqh4qkdhZo0cnG7Xyw_izFIXjU_D3OVSAc3mVZvtri2cv4mlbp4wJA-lFX-gz1LEe59PdjjXewKyd8EPSRfGC7NyRfUCAaQ9e2lpaEaOyMTjZJ35yVaWpQXq_TPOwc_Ao2cgBXuRA_5e7rE9Y1_QWR2oEVzg"/>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-space-2xs mb-space-2xs">
+<span class="bg-surface-container-highest px-space-xs py-space-2xs text-caption font-caption text-primary rounded font-bold">LOCAL SECRETS</span>
+<span class="text-caption font-caption text-on-surface-variant">Fastest East-West Route</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs">
+            How to Navigate Bangkok's Canal Boats (Khlong Saen Saep) Like a Seasoned Local
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Bypass Sukhumvit's gridlock completely: how to board moving canal ferries, pull the rope tarpaulin to avoid spray, and transfer seamlessly between the Golden Mount line and NIDA line.
+          </p>
+<a class="font-label-md text-label-md text-secondary font-bold flex items-center gap-space-2xs hover:underline" href="#">
+            Master the Khlong Route →
+          </a>
+</div>
+</div>
+</div>
+<!-- Right Column: Commuter Alerts & Official Advisories (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary font-bold">notifications_active</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Service Advisories</h3>
+</div>
+<span class="text-caption font-caption bg-secondary-container text-on-secondary-container px-space-xs py-space-2xs rounded font-bold">ALL CLEAR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Real-time incident reports, escalator maintenance bulletins, weekend festival diversions, and weather warnings directly from BMA and MRTA operations centers.
+        </p>
+<!-- Advisory Timeline -->
+<div class="space-y-space-md font-body-sm text-body-sm">
+<!-- Advisory Item 1 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-semibold text-on-surface">BTS Mo Chit (N8) Exit 3 Escalator Modernization</span>
+<span class="font-caption text-caption text-on-surface-variant">14:15 Today</span>
+</div>
+<p class="text-caption font-caption text-on-surface-variant mt-space-2xs">
+                Escalator 3B undergoing scheduled heavy mechanical overhaul. Passenger elevators and stairs fully operational. Expected reopening: Friday morning.
+              </p>
+</div>
+</div>
+<!-- Advisory Item 2 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-semibold text-on-surface">MRT Yellow Line Headway Optimization</span>
+<span class="font-caption text-caption text-on-surface-variant">11:00 Today</span>
+</div>
+<p class="text-caption font-caption text-on-surface-variant mt-space-2xs">
+                Additional 4-car monorail train inducted between Lat Phrao and Samrong for evening rush hour (16:30 - 19:30). Peak intervals reduced to 5 minutes.
+              </p>
+</div>
+</div>
+<!-- Advisory Item 3 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-semibold text-on-surface">Chao Phraya High Tide Advisory: No Impact</span>
+<span class="font-caption text-caption text-on-surface-variant">08:30 Today</span>
+</div>
+<p class="text-caption font-caption text-on-surface-variant mt-space-2xs">
+                River swell at Sathorn Pier +1.2m above mean sea level. Pier pontoons adjusted and all electric catamaran sailings proceeding on normal timetable.
+              </p>
+</div>
+</div>
+<!-- Advisory Item 4 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-semibold text-on-surface">Weekend Loy Krathong Extended Hours Notice</span>
+<span class="font-caption text-caption text-on-surface-variant">Yesterday</span>
+</div>
+<p class="text-caption font-caption text-on-surface-variant mt-space-2xs">
+                BTS &amp; MRT have announced service extensions until 02:00 AM for the upcoming river festival celebrations. Pier security will have organized queuing lanes.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md">
+<button class="w-full py-space-xs px-space-md bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md rounded-lg font-semibold flex items-center justify-center gap-space-2xs transition-colors">
+<span class="material-symbols-outlined text-label-md">rss_feed</span>
+          Subscribe to Telegram Transit Alerts Feed
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Transit Hub Script -->
+<script>
+    (function() {
+      // Station Fare & Time Matrix Data
+      const routeData = {
+        'siam-bang-sue': { time: '24', fare: '47', transfer: 'Direct MRT Interchange at Chatuchak / Mo Chit', dist: '11.8 km' },
+        'siam-iconsiam': { time: '18', fare: '44', transfer: '1 Transfer: BTS Krung Thon Buri (Gold Line)', dist: '6.4 km' },
+        'siam-suvarnabhumi': { time: '38', fare: '72', transfer: '1 Transfer: BTS Phaya Thai to ARL Express', dist: '28.5 km' },
+        'siam-sala-daeng': { time: '8', fare: '25', transfer: 'Direct BTS Silom Line (Cross-Platform at Siam)', dist: '2.8 km' },
+        'siam-thong-lo': { time: '14', fare: '35', transfer: 'Direct BTS Sukhumvit Line', dist: '5.6 km' },
+
+        'asok-bang-sue': { time: '22', fare: '43', transfer: 'Direct MRT Blue Line (Sukhumvit to Bang Sue)', dist: '13.1 km' },
+        'asok-iconsiam': { time: '32', fare: '62', transfer: '1 Transfer: BTS Siam to Gold Line at Krung Thon Buri', dist: '12.0 km' },
+        'asok-suvarnabhumi': { time: '32', fare: '55', transfer: '1 Transfer: MRT Phetchaburi to ARL Makkasan', dist: '24.2 km' },
+        'asok-sala-daeng': { time: '12', fare: '28', transfer: 'Direct MRT Blue Line (Sukhumvit to Si Lom)', dist: '4.5 km' },
+        'asok-thong-lo': { time: '4', fare: '17', transfer: 'Direct BTS Sukhumvit Line (2 Stops)', dist: '2.1 km' },
+
+        'phrom-phong-bang-sue': { time: '28', fare: '49', transfer: '1 Transfer: BTS Mo Chit to MRT Blue Line', dist: '15.0 km' },
+        'phrom-phong-iconsiam': { time: '26', fare: '58', transfer: '1 Transfer: BTS Siam to Gold Line', dist: '9.8 km' },
+        'phrom-phong-suvarnabhumi': { time: '35', fare: '68', transfer: '1 Transfer: BTS Phaya Thai to ARL', dist: '29.8 km' },
+        'phrom-phong-sala-daeng': { time: '18', fare: '38', transfer: '1 Transfer: BTS Siam to Silom Line', dist: '6.2 km' },
+        'phrom-phong-thong-lo': { time: '2', fare: '17', transfer: 'Direct BTS Sukhumvit Line (1 Stop)', dist: '1.2 km' },
+
+        'bang-sue-bang-sue': { time: '0', fare: '0', transfer: 'Current Station', dist: '0 km' },
+        'bang-sue-iconsiam': { time: '38', fare: '65', transfer: '1 Transfer: MRT Silom to BTS Gold Line', dist: '18.2 km' },
+        'bang-sue-suvarnabhumi': { time: '52', fare: '75', transfer: '1 Transfer: MRT Phetchaburi to ARL Makkasan', dist: '34.0 km' },
+        'bang-sue-sala-daeng': { time: '26', fare: '43', transfer: 'Direct MRT Blue Line (Bang Sue to Si Lom)', dist: '15.2 km' },
+        'bang-sue-thong-lo': { time: '30', fare: '52', transfer: '1 Transfer: MRT Sukhumvit to BTS Thong Lo', dist: '16.5 km' },
+
+        'saphan-taksin-bang-sue': { time: '32', fare: '47', transfer: 'Direct MRT Blue Line via Si Lom or BTS Siam', dist: '16.8 km' },
+        'saphan-taksin-iconsiam': { time: '8', fare: '10', transfer: 'Direct Chao Phraya Gold Ferry Cross-River', dist: '1.1 km' },
+        'saphan-taksin-suvarnabhumi': { time: '48', fare: '78', transfer: '1 Transfer: BTS Phaya Thai to ARL', dist: '32.1 km' },
+        'saphan-taksin-sala-daeng': { time: '7', fare: '25', transfer: 'Direct BTS Silom Line (3 Stops)', dist: '3.4 km' },
+        'saphan-taksin-thong-lo': { time: '22', fare: '47', transfer: '1 Transfer: BTS Siam Cross-Platform', dist: '10.5 km' },
+
+        'mo-chit-bang-sue': { time: '8', fare: '19', transfer: 'Direct MRT Blue Line (Chatuchak to Bang Sue)', dist: '2.5 km' },
+        'mo-chit-iconsiam': { time: '36', fare: '62', transfer: '1 Transfer: BTS Siam to Gold Line', dist: '15.4 km' },
+        'mo-chit-suvarnabhumi': { time: '45', fare: '68', transfer: '1 Transfer: BTS Phaya Thai to ARL', dist: '31.2 km' },
+        'mo-chit-sala-daeng': { time: '22', fare: '43', transfer: 'Direct MRT Blue Line (Chatuchak to Si Lom)', dist: '12.8 km' },
+        'mo-chit-thong-lo': { time: '24', fare: '47', transfer: 'Direct BTS Sukhumvit Line', dist: '12.4 km' }
+      };
+
+      const originSelect = document.getElementById('origin-station');
+      const destSelect = document.getElementById('dest-station');
+      const timeDisplay = document.getElementById('route-time');
+      const fareDisplay = document.getElementById('route-fare');
+      const interchangeDisplay = document.getElementById('route-interchange');
+      const detailsDisplay = document.getElementById('route-details');
+      const refreshBtn = document.getElementById('refresh-status-btn');
+
+      function calculateRoute() {
+        const key = originSelect.value + '-' + destSelect.value;
+        const result = routeData[key] || {
+          time: '25',
+          fare: '42',
+          transfer: 'Standard Rapid Transit Connection',
+          dist: 'Estimated 9.5 km'
+        };
+
+        timeDisplay.textContent = result.time;
+        fareDisplay.textContent = '฿' + result.fare;
+        interchangeDisplay.textContent = result.transfer;
+        detailsDisplay.textContent = 'Direct rail connection • Distance ' + result.dist;
+      }
+
+      if (originSelect && destSelect) {
+        originSelect.addEventListener('change', calculateRoute);
+        destSelect.addEventListener('change', calculateRoute);
+      }
+
+      if (refreshBtn) {
+        refreshBtn.addEventListener('click', function() {
+          const originalText = refreshBtn.querySelector('span:last-child').textContent;
+          refreshBtn.querySelector('span:last-child').textContent = 'Synced';
+          setTimeout(function() {
+            refreshBtn.querySelector('span:last-child').textContent = originalText;
+          }, 1500);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl py-space-2xl text-on-surface"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container font-headline-sm text-headline-sm font-bold">BML</div><span class="font-headline-sm text-headline-sm tracking-tight text-primary">BANGKOK METRO LIFE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant pr-space-xl">Independent, authoritative urban journalism capturing the pulse, architecture, culture, and transit landscape of Southeast Asia's premier metropolitan hub.</p><div class="flex flex-col gap-space-xs"><div class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">BML Morning Dispatch</div><div class="flex max-w-sm gap-space-xs"><input class="bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm rounded-lg flex-1 outline-none text-on-surface focus:ring-1 focus:ring-primary" placeholder="Your email address" type="email"/><button class="bg-primary text-on-primary px-space-md py-space-xs font-label-md text-label-md rounded-lg hover:bg-primary-container transition-colors">Subscribe</button></div></div></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">News Desks</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">City Governance</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Urban Real Estate</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Economy &amp; Retail</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Arts &amp; Heritage</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Environment &amp; Climate</a></li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">Transit &amp; City</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">BTS SkyTrain Radar</a></li><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">MRT Blue &amp; Purple Lines</a></li><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">Chao Phraya Express</a></li><li><a class="hover:text-on-surface transition-colors" data-path="travel" href="#">Neighborhood Guides</a></li><li><a class="hover:text-on-surface transition-colors" data-path="food" href="#">Night Market Maps</a></li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">About &amp; Connect</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="about-bml" href="#">About BML</a></li><li><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Editorial Standards</a></li><li><a class="hover:text-on-surface transition-colors" data-path="contact-newsroom" href="#">Newsroom Contact</a></li><li><a class="hover:text-on-surface transition-colors" data-path="advertising" href="#">Partner &amp; Advertise</a></li><li><a class="hover:text-on-surface transition-colors" data-path="social-media" href="#">Community Dispatch</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-caption text-caption text-on-surface-variant"><div>© 2024 Bangkok Metro Life (BML) Publishing Group Co., Ltd. All rights reserved. Bangkok Edition.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Ethics Policy</a></div></div></div></footer></body></html>
+
+<!-- Design System -->

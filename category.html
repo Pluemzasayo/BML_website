@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#dae2fd", "error-container": "#ffdad6", "surface-dim": "#d2d9f4", "surface-bright": "#faf8ff", "surface-container-highest": "#dae2fd", "tertiary-container": "#004b5f", "secondary-fixed-dim": "#2be19d", "on-primary": "#ffffff", "primary": "#003533", "on-primary-fixed": "#00201e", "on-error": "#ffffff", "primary-fixed": "#b3eee9", "on-secondary-container": "#00734d", "tertiary-fixed-dim": "#81d1f0", "on-secondary": "#ffffff", "outline": "#707978", "on-secondary-fixed": "#002113", "primary-fixed-dim": "#97d1cd", "primary-container": "#0a4d4a", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eef0ff", "secondary": "#006c48", "on-secondary-fixed-variant": "#005235", "tertiary-fixed": "#b9eaff", "inverse-surface": "#283044", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#004d62", "secondary-fixed": "#56feb7", "on-surface-variant": "#404947", "surface": "#faf8ff", "on-tertiary-container": "#6cbcdb", "tertiary": "#003341", "on-primary-fixed-variant": "#0e4f4c", "on-primary-container": "#83bdb8", "on-tertiary-fixed": "#001f29", "inverse-primary": "#97d1cd", "secondary-container": "#56feb7", "surface-tint": "#2d6764", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "background": "#faf8ff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container-high": "#e2e7ff", "surface-container": "#eaedff", "outline-variant": "#bfc8c7", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-tablet": "1.5rem", "space-2xl": "3rem", "container-max-width": "1280px", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-2xs": "0.25rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "space-sm": "0.75rem", "space-3xl": "4rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xs": "0.5rem", "gutter-desktop": "2rem" }, "fontFamily": { "body-lg": [ "Work Sans" ], "headline-lg": [ "Space Grotesk" ], "body-md": [ "Work Sans" ], "label-ticker": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "headline-xl-mobile": [ "Space Grotesk" ], "label-md": [ "Work Sans" ], "headline-md": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ], "caption": [ "Work Sans" ], "label-lg": [ "Work Sans" ], "body-sm": [ "Work Sans" ], "headline-xl": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "label-ticker": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "caption": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-44 w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex flex-col justify-between pt-space-xs pb-space-xs"><div class="flex items-center justify-between pb-space-2xs text-on-surface-variant font-label-md text-label-md"><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg">calendar_today</span>Thursday, October 24</span><span class="hidden sm:inline-block text-outline-variant">•</span><span class="hidden sm:flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg">sunny</span>Bangkok 31°C Fair</span><span class="hidden md:inline-block text-outline-variant">•</span><span class="hidden md:flex items-center gap-space-2xs"><span class="material-symbols-outlined text-label-lg text-secondary">air</span>AQI 42 Good</span></div><div class="flex items-center gap-space-sm"><span class="px-space-xs py-space-2xs bg-surface-container font-label-md text-label-md text-on-surface rounded-lg">EN</span><button class="flex items-center gap-space-2xs px-space-sm py-space-2xs bg-primary-container text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary transition-colors"><span class="material-symbols-outlined text-label-lg">mail</span>Get Newsletter</button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X57zC94FHu4ta3FNIzPx9-1pIGPUpN40jGsxC9u3evkiH6bHq2ecg0CpSgnFfg52dkz49S3NF5jV0b4ropbiJ11iN2Q8RP1h8Q6TWnXxBr4YwYdgbjCg2BVHm89qRzlykgQXx0GW7ilmDNOxwNtlJh6ZgRehgjRQoEVj09luQGkIO7RHskg2O_TPkhC0MfuQXnFWtRF8POzNb098T8dpBq0axsY7ZZV46Arh3ZD46grjNBDNgCq8HEPUa-HSDSln53sYbC7OXelGI"/></div></div><div class="flex items-center justify-between py-space-xs"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container font-headline-md text-headline-md font-bold">BML</div><div><div class="font-headline-lg text-headline-lg tracking-tight text-primary leading-none">BANGKOK METRO LIFE</div><div class="font-caption text-caption text-on-surface-variant tracking-wider uppercase mt-space-2xs">Bangkok Edition • English Daily</div></div></div></div><div class="flex items-center gap-space-xs"><div class="relative hidden sm:block w-56 lg:w-72"><span class="material-symbols-outlined absolute left-space-xs top-1/2 -translate-y-1/2 text-outline text-label-lg">search</span><input class="w-full pl-space-xl pr-space-xs py-space-xs bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:ring-1 focus:ring-primary" placeholder="Search stories, transit, dining..." type="text"/></div><button class="p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined">tune</span></button></div></div><div class="flex items-center justify-between pt-space-2xs"><nav class="flex items-center gap-space-xs overflow-x-auto whitespace-nowrap" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-2xs"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-2xs" data-path="home" href="index.html">Home</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="general" href="?category=general">General</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="food" href="?category=food">Food</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="travel" href="?category=travel">Travel</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="environment" href="?category=environment">Environment</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="transportation" href="?category=transportation">Transportation</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-sm py-space-2xs transition-colors rounded-lg" data-path="social-media" href="?category=social-media">Social Media</a></nav><div class="hidden md:flex items-center gap-space-2xs bg-secondary-container px-space-sm py-space-2xs rounded-full text-on-secondary-container font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Transit Status: All Lines Normal</span></div></div></div></header><main class="w-full pt-44 bg-surface max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="flex flex-col w-full">
+<!-- Live Editorial Dispatch Ribbon -->
+<div class="w-full bg-primary-container text-on-primary py-space-xs px-space-md rounded-lg flex items-center justify-between gap-space-sm mb-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-md font-label-md bg-secondary-container text-on-secondary-container font-bold tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1 animate-ping"></span>
+        Issue #48
+      </span>
+<span class="font-label-ticker text-label-ticker tracking-wide text-primary-fixed uppercase truncate">
+        BANGKOK FOOD &amp; COMMUTE DISPATCH // 14 NEW MICHELIN SELECTED VENDORS PINNED ALONG BLUE &amp; GOLD LINES
+      </span>
+</div>
+<div class="hidden lg:flex items-center gap-space-sm font-label-md text-label-md text-primary-fixed-dim whitespace-nowrap">
+<span>Updated 18m ago</span>
+<span class="text-surface-container-highest">•</span>
+<span class="flex items-center gap-space-2xs text-secondary-container">
+<span class="material-symbols-outlined text-sm">schedule</span> Peak Dining Commute: 18:30–21:00
+      </span>
+</div>
+</div>
+<!-- Hero Header & Section Manifesto -->
+<div class="relative w-full rounded-xl bg-surface-container-lowest p-space-lg md:p-space-xl lg:p-space-2xl shadow-sm mb-space-xl overflow-hidden">
+<div class="absolute -right-12 -bottom-12 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center gap-space-xs font-label-md text-label-md tracking-widest uppercase text-secondary font-bold">
+<span class="material-symbols-outlined text-base">restaurant_menu</span>
+<span>Bangkok Metro Life • Gastronomy &amp; Urban Journeys</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight font-bold">
+        The City on a Plate: Transit-First Dining &amp; Neighborhood Itineraries
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Curated eating guides, third-wave roasters, historic wok masters, and architectural walking tours—strictly within rapid foot-reach of Bangkok’s Skytrain, Subway, and Chao Phraya piers.
+      </p>
+</div>
+<!-- Filter Matrix Bar -->
+<div class="mt-space-xl pt-space-lg bg-surface-container-low rounded-xl p-space-md md:p-space-lg flex flex-col gap-space-md shadow-inner">
+<div class="flex flex-wrap items-center justify-between gap-space-xs text-on-surface">
+<span class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs font-bold">
+<span class="material-symbols-outlined text-secondary">tune</span>
+          Filter Matrix
+        </span>
+<div class="flex items-center gap-space-xs">
+<button class="text-on-surface-variant hover:text-primary font-label-md text-label-md flex items-center gap-space-2xs transition-colors" id="resetFiltersBtn">
+<span class="material-symbols-outlined text-sm">restart_alt</span> Reset Filters
+          </button>
+<span class="bg-primary text-on-primary font-label-ticker text-label-ticker px-space-xs py-0.5 rounded-full" id="filterCountBadge">12 Active Spots</span>
+</div>
+</div>
+<!-- Matrix Rows -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Neighborhoods -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-sm">near_me</span> Neighborhood
+          </label>
+<div class="flex flex-wrap gap-space-2xs" id="neighborhoodFilterGroup">
+<button class="filter-pill active px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" data-type="hood" data-value="all">All Quarters</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="hood" data-value="yaowarat">Yaowarat</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="hood" data-value="ari">Ari</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="hood" data-value="thonglor">Thonglor • Ekkamai</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="hood" data-value="charoenkrung">Charoenkrung</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="hood" data-value="talat-phlu">Talat Phlu</button>
+</div>
+</div>
+<!-- Transit Proximity -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-sm">train</span> Transit Radius
+          </label>
+<div class="flex flex-wrap gap-space-2xs" id="transitFilterGroup">
+<button class="filter-pill active px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-primary text-on-primary transition-all" data-type="transit" data-value="all">Any Walk</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="transit" data-value="sub3">&lt; 3 mins</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="transit" data-value="sub7">3–7 mins</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="transit" data-value="pier">Pier &amp; Ferry</button>
+</div>
+</div>
+<!-- Category -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-sm">local_bar</span> Experience Type
+          </label>
+<div class="flex flex-wrap gap-space-2xs" id="categoryFilterGroup">
+<button class="filter-pill active px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-primary text-on-primary transition-all" data-type="cat" data-value="all">All</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="cat" data-value="street">Street Legend</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="cat" data-value="coffee">Specialty Roasters</button>
+<button class="filter-pill px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" data-type="cat" data-value="bars">Wine &amp; Speakeasy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Editor's Dining Choice Magazine Lead -->
+<section class="w-full mb-space-2xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-ticker text-label-ticker tracking-wider uppercase text-primary font-bold">The Magazine Cover Feature</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Editorial Dispatch • Nov 2024</span>
+</div>
+<!-- Editorial Feature Bento Hero -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm group">
+<!-- Media Aspect 7 cols -->
+<div class="lg:col-span-7 relative rounded-lg overflow-hidden min-h-[340px] lg:min-h-[460px] flex flex-col justify-end p-space-lg text-on-primary">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Vibrant night scene in Bangkok Chinatown Yaowarat featuring an open air street food stall with glowing neon signs, dramatic wok hei flame bursts from a seasoned carbon steel wok, patrons seated on stainless steel round stools, warm golden lantern light reflecting on wet asphalt, cinematic editorial photography with high contrast and emerald teal tone accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYZIMhoGVLxdYoPcjKnPgmFenSGN9erw2bCER0CLV9JUmCnjS1-TDTJ3Ls0T7eHmAwHYbZQ1pSJ_ZbZm_6M9RP20iNqqUn532_bFAy2XyLPLcvWhR7Lyair_5wtuyAQ1Ds0PT6Nrxps6MilIlYmpoKbeIZtbXuB0UpFqbxL3oHtMrdsWEWMwqPY96Y8LamVPMF1IVs7QPlZwnNU83z837Sx-67WNnZ9pNQ7ynK15GHRUSGX2X7D6veVA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-2xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-ticker text-label-ticker uppercase font-bold tracking-wider">Editor's Star Choice</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary-container">train</span> MRT Wat Mangkon (3 min walk)
+            </span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-md text-label-md">$$ • Moderate</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl font-bold tracking-tight text-on-primary drop-shadow-sm">
+            The 24-Hour Eatery Chronicles: Midnight Charcoal Wok Masters of Yaowarat
+          </h2>
+<p class="font-body-md text-body-md text-surface-container line-clamp-2 max-w-xl">
+            Past midnight, when the main thoroughfare quietens, third-generation cooks stoke tamarind charcoal braziers to produce noodles with searing wok hei and century-old pork broth recipes.
+          </p>
+</div>
+</div>
+<!-- Lead Details & Intel 5 cols -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-md py-space-xs">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-secondary font-bold" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">4.9</span>
+<span class="font-caption text-caption text-on-surface-variant font-medium">/ 5.0 (340+ verified BML reviews)</span>
+</div>
+<span class="font-label-ticker text-label-ticker uppercase px-space-xs py-1 rounded bg-surface-container text-primary font-bold">Yaowarat Quarters</span>
+</div>
+<!-- Highlight breakdown -->
+<div class="space-y-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">local_fire_department</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Signature: Guay Tiew Kua Gai Yaowarat</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Wide rice noodles caramelized in pork lard over superheated cast iron, served with crisp pickled squid and preserved cabbage.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5">directions_subway</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Transit Walk Route</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Exit 1 from MRT Wat Mangkon station, turn left onto Plaeng Nam Road, then a quick 120m into Soi Texas.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container mt-0.5">access_time</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Hours of Operation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily 17:30 — 03:30 AM (Peak charcoal queue from 20:00 to 22:30).</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to action row -->
+<div class="pt-space-xs flex items-center justify-between gap-space-sm">
+<button class="flex-1 bg-primary hover:bg-primary-container text-on-primary py-space-xs px-space-md rounded-lg font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-sm transition-all">
+<span class="material-symbols-outlined text-base">bookmark_add</span> Save to Transit Itinerary
+          </button>
+<button class="p-space-xs rounded-lg bg-surface-container hover:bg-surface-variant text-primary transition-colors" title="Share Article">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Curated Food Columns & In-Depth Analyses -->
+<section class="w-full mb-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs font-label-ticker text-label-ticker uppercase text-secondary font-bold">
+<span class="material-symbols-outlined text-base">local_library</span> Editorial Columns
+        </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">
+          Essays, Audits &amp; Taste Dispatches
+        </h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Curated weekly by BML Senior Food Critics</span>
+</div>
+<!-- 3 Column Magazine Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Column 1: Ari Coffee Roasters -->
+<article class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Sunlit minimalist specialty cafe in Ari Bangkok with clean raw concrete walls, warm blonde timber counters, La Marzocco espresso machine, potted tropical monstera foliage, artisan ceramic coffee cups, peaceful morning dappled sunlight aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3eiE24bJp8ESzLUYokD8VzAvPF00P-Jo_FZuaCX8v_od1w7IWtQ8nr3q0GMd_m5Jgmbvk01DLWDuJSRWuN1WgZ158e0M7vYwZkI2u1OzAVHKWe2K0xhKrtDTwUkk1vwsVvYUYL29h_ByewvFMtBlfGj-FnamMW2u5Wn1VV0jXjBID5TghN76hNPflYVdt3gYuOuU_4KhBNFoZAbHW7SDlp-gk3d4jlYvthcfettS-mODtfNsm1zUhAA')"></div>
+<span class="absolute top-space-xs left-space-xs px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-ticker text-label-ticker uppercase">Specialty Coffee</span>
+<span class="absolute bottom-space-xs right-space-xs px-space-xs py-0.5 rounded bg-surface/90 text-primary font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary">directions_walk</span> BTS Ari (4 min)
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>By Kittisak P. • 6 min read</span>
+<span class="font-bold text-secondary">Rating 4.8</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+              Top 10 Specialty Coffee Roasters Hidden Down Peaceful Sois in Ari
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              From honey-processed Chiang Rai beans to Japanese slow-drip siphons, Ari’s residential alleys provide Bangkok’s most tranquil sanctuary for serious caffeine purists.
+            </p>
+</div>
+<a class="inline-flex items-center gap-space-2xs font-label-md text-label-md font-bold text-primary hover:text-secondary group-hover:translate-x-1 transition-all" href="#">
+            Read The Field Guide <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Column 2: Michelin Bib Gourmand Audit -->
+<article class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Crispy golden Thai crab omelette cooking over fierce charcoal fire in Bangkok street food vendor setting with goggles, red Michelin plaques displayed in rustic shophouse, steam and intense cinematic wok sizzle, editorial journalism look." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_AhYVdvjfuEMeZB7v3Ddqan1gzN6Gf0a4qVqV3t_Tdl1jG4u9TBIGWc0rJb_L0A0BU5_57Gz1uEtZt0nxUXWnUEHrSfGU837fBu05jyKoVvOMv4rcnkryL8Iik12_hpJy-jWnL33B8K3JpeTfZzLP9uAVTo35UFlndIldTOgQ7Juv6z3zrkkCXXDTN-S5OtT4UvFM8U-Ure_bZFNnQIw6mRyssfNpy_xuemP4BCm7asBi0XcIrD6YBw')"></div>
+<span class="absolute top-space-xs left-space-xs px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-ticker text-label-ticker uppercase">Street Food Audit</span>
+<span class="absolute bottom-space-xs right-space-xs px-space-xs py-0.5 rounded bg-surface/90 text-primary font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary">directions_walk</span> MRT Sam Yot (8 min)
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>By Sarah Henderson • 8 min read</span>
+<span class="font-bold text-secondary">Critique Focus</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+              From Pad Thai to Jay Fai: Is Michelin Bib Gourmand Still Worth the Queue in 2025?
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              An unvarnished investigation into whether astronomical wait times, tourist influx, and pricing spikes have altered the soul of Bangkok’s most celebrated heritage stalls.
+            </p>
+</div>
+<a class="inline-flex items-center gap-space-2xs font-label-md text-label-md font-bold text-primary hover:text-secondary group-hover:translate-x-1 transition-all" href="#">
+            Read The Investigation <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Column 3: Natural Wine & Charoenkrung -->
+<article class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Chic dimly lit wine bar inside restored historic Bangkok Sino-Portuguese shophouse on Charoenkrung road, bottles of natural orange wine on raw brick shelves, elegant stemmed glasses, small plates of Thai-fusion tapas, ambient warm brass pendant lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9oMQ3iuUxiolO2Ls97tuaU2Is2JhW4H6JRpfW5NsR0CKR5y8ga8t0KmcdCfAyeVuIzpJagGCxLrEu25UUSJ8wFhpFPqwydWJPqYLno4UAJLNfMqliKNOLiasA9ho-K79i0sa0XqS5kgj11_bZx8cpIrNXv1XV05kRMQLXctUE2LTMm3KJZq-nkLgghl72pQL6YA9cxOMHt6tA08m-7iXpKfC3o6n-D4mOypOI7kwtU_2x65inMUUyEw')"></div>
+<span class="absolute top-space-xs left-space-xs px-space-xs py-0.5 rounded bg-tertiary text-on-tertiary font-label-ticker text-label-ticker uppercase">Nightlife &amp; Wine</span>
+<span class="absolute bottom-space-xs right-space-xs px-space-xs py-0.5 rounded bg-surface/90 text-primary font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary">directions_walk</span> BTS Saphan Taksin (6 min)
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>By Liam Vance • 5 min read</span>
+<span class="font-bold text-secondary">Rating 4.9</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+              Natural Wine &amp; Small Plates: The New Culinary Wave Taking Over Charoenkrung
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              How low-intervention vintages from Central Europe and biodynamic pairings found a vibrant second home within century-old timber shophouses along Thailand’s oldest paved avenue.
+            </p>
+</div>
+<a class="inline-flex items-center gap-space-2xs font-label-md text-label-md font-bold text-primary hover:text-secondary group-hover:translate-x-1 transition-all" href="#">
+            Read The Field Guide <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 4: Bangkok Travel & Walking Itineraries -->
+<section class="w-full mb-space-2xl">
+<div class="bg-surface-container-low rounded-xl p-space-lg md:p-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div>
+<span class="px-space-xs py-1 rounded bg-secondary-container text-on-secondary-container font-label-ticker text-label-ticker uppercase font-bold tracking-wider inline-block mb-space-2xs">
+            Curated Urban Walks
+          </span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight">
+            Metropolitan Walking Itineraries
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs max-w-xl">
+            Self-guided urban circuits step-by-step with transit start/finish points, coffee respites, and hidden architectural markers.
+          </p>
+</div>
+<button class="bg-surface-container-lowest hover:bg-surface-variant text-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md font-bold flex items-center gap-space-xs self-start md:self-auto transition-colors shadow-sm">
+<span class="material-symbols-outlined text-base">download</span> Download Offline GPX Maps
+        </button>
+</div>
+<!-- Itinerary List / Horizontal Cards -->
+<div class="grid grid-cols-1 gap-space-md">
+<!-- Itinerary 1: Song Wat & Talad Noi -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg flex flex-col lg:flex-row gap-space-md lg:items-center justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="w-full sm:w-44 h-32 rounded-lg overflow-hidden shrink-0 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Charming narrow alleyway in Talad Noi Bangkok with vintage rusted automobile scrap art sculptures, restored 19th-century courtyard houses, hanging red lanterns and lush hanging potted ferns in warm afternoon golden hour light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3uAm3E6A4ixQlWG5PX-1dw18rsVqDipFjPjOqmty9QZz-tY7-DYHn69XROf0O6yJiyZtiX_9OgAvDLFI3a2RpZEjU68Uj6iKssNDuce-EtBQblykVgF_6ldgmommpVLd1a3-Mml4WbwUy4ybm0ma28Wjtk7FDLmDDo9zzw7JCtuCs_9VoDfULjTbZtHzGVI1q9pUk21NtesDdFFyCoMzlKwaJuHlJ66Ky-I4dD6JzXa1pQlloy6gxUQ')"></div>
+<span class="absolute bottom-2 left-2 bg-primary/90 text-on-primary font-caption text-caption px-1.5 py-0.5 rounded">3.4 km Walk</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-ticker text-label-ticker uppercase font-bold">
+<span>Itinerary #01</span>
+<span>•</span>
+<span>Heritage • Architecture • Cafes</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary">
+                The Sunday Stroll: Song Wat Road &amp; The Alleys of Talad Noi
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                Start at MRT Hua Lamphong, traverse spice trade warehouses, stop for cold brew at Songwat Coffee Roasters, explore auto-parts scrap temples, and finish at Marine Dept Pier.
+              </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-2xs text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">trip_origin</span> MRT Hua Lamphong (Exit 2)</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">sports_score</span> Chao Phraya Pier N4</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">timelapse</span> ~ 2.5 hrs</span>
+</div>
+</div>
+</div>
+<div class="flex lg:flex-col items-center lg:items-end justify-between gap-space-sm shrink-0">
+<div class="text-right hidden lg:block">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">5 Stops</div>
+<span class="font-caption text-caption text-on-surface-variant">Includes 2 snacks + 1 gallery</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md font-bold flex items-center gap-space-2xs transition-colors">
+<span>View Route</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</div>
+</div>
+<!-- Itinerary 2: Bang Kachao Cycling -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg flex flex-col lg:flex-row gap-space-md lg:items-center justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="w-full sm:w-44 h-32 rounded-lg overflow-hidden shrink-0 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Elevated concrete bicycle path winding through dense emerald green jungle canopy and betel nut palm groves in Bang Kachao Green Lung Bangkok, sunbeams filtering through leaves onto a vintage bicycle parked near wooden canal bridge." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLsZp9_1yoOq6_xsmI_5px4-lSaQ2IJzDub-o6zbJg4DO8d7UudPtlYTQeBeeYGmoVcl4j547tLn8VsL1y67i--5an9BZLh6xvbB5q2yOvTMvPSrW26PHHpfNYFv8EVUv_o4As238uuPohbx2Grmj-PEy2A_4yRG5FcWFLDYkd4y24GNE_2yJRhyQGuLpmB-7XGNR1KDhz1zwoOiY44t2kZVCEn6IDq5C-jIRWPB0CON4xtnUHahRJ1w')"></div>
+<span class="absolute bottom-2 left-2 bg-primary/90 text-on-primary font-caption text-caption px-1.5 py-0.5 rounded">12 km Loop</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-ticker text-label-ticker uppercase font-bold">
+<span>Itinerary #02</span>
+<span>•</span>
+<span>Eco Discovery • Cycling • Riverside</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary">
+                Green Escapes: Cycling Bang Kachao (The Green Lung) from Khlong Toei Pier
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                Take a long-tail boat crossing from Khlong Toei, rent a city cruiser for 50 THB, weave through elevated canal walkways, and visit the weekend Bang Nam Phueng floating market.
+              </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-2xs text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">trip_origin</span> MRT Queen Sirikit + 5m taxi</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">directions_boat</span> Khlong Toei Pier</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">timelapse</span> ~ Half Day (4 hrs)</span>
+</div>
+</div>
+</div>
+<div class="flex lg:flex-col items-center lg:items-end justify-between gap-space-sm shrink-0">
+<div class="text-right hidden lg:block">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">6 Waypoints</div>
+<span class="font-caption text-caption text-on-surface-variant">Includes botanical park + pier</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md font-bold flex items-center gap-space-2xs transition-colors">
+<span>View Route</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</div>
+</div>
+<!-- Itinerary 3: Contemporary Art Hop -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg flex flex-col lg:flex-row gap-space-md lg:items-center justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="w-full sm:w-44 h-32 rounded-lg overflow-hidden shrink-0 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="High ceiling modern art gallery inside a converted industrial warehouse in Bangkok with abstract canvas paintings, polished concrete floor reflecting gallery spotlights, patrons admiring Thai contemporary multimedia installations." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUzKy5knT-ixp8ENlQZiIPRW5OkbITT4tCf_630lLfTUjFonhQPs3OUVbGK1IhJqHJaHTEs06GB9tX3fFgG5PBa9dM1UfO_qwS0Wbd4VlAabwACViFVy8r4oT1XAJ6rFXyZem5E0zTRFo6osJuB8WeYgVQp6tFn0igsAyjWqv8w97txSHHa5P5mvoEgNH6aLzsFxuMfoHpb9TWPMPJ2hzM2kI62QSm9R9ZDtt8Cnvqf-trmgZrsms2gA')"></div>
+<span class="absolute bottom-2 left-2 bg-primary/90 text-on-primary font-caption text-caption px-1.5 py-0.5 rounded">2.1 km Walk</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-ticker text-label-ticker uppercase font-bold">
+<span>Itinerary #03</span>
+<span>•</span>
+<span>Contemporary Art • Design Hubs</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary">
+                Contemporary Art Hop: 5 Independent Galleries Within 10 Mins of MRT Hua Lamphong
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                Uncover Bangkok's thriving indie gallery circuit connecting ATT 19, Warehouse 30, and lesser-known experimental artist collectives tucked away in Soi Nana (Chinatown).
+              </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-2xs text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">trip_origin</span> MRT Hua Lamphong (Exit 1)</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">sports_score</span> Charoenkrung Soi 30</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">timelapse</span> ~ 3 hrs</span>
+</div>
+</div>
+</div>
+<div class="flex lg:flex-col items-center lg:items-end justify-between gap-space-sm shrink-0">
+<div class="text-right hidden lg:block">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">5 Galleries</div>
+<span class="font-caption text-caption text-on-surface-variant">Free admission spots</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md font-bold flex items-center gap-space-2xs transition-colors">
+<span>View Route</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Interactive Map Preview Widget -->
+<section class="w-full mb-space-2xl">
+<div class="bg-primary text-on-primary rounded-xl overflow-hidden shadow-md">
+<div class="p-space-lg md:p-space-xl flex flex-col lg:flex-row gap-space-xl items-start lg:items-center justify-between">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<div class="flex items-center gap-space-2xs text-secondary-container font-label-ticker text-label-ticker uppercase font-bold">
+<span class="material-symbols-outlined text-base">map</span> Live Geospatial Registry
+          </div>
+<h2 class="font-headline-xl text-headline-xl font-bold text-on-primary tracking-tight">
+            Bangkok Metro Food Map: 120+ Curated Spots Pinned Along The Rail
+          </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim">
+            Explore our curated database filtered by BTS Sukhumvit, Silom, Gold Line, MRT Blue Line, MRT Yellow Line, and Chao Phraya Express boat piers. Never be stranded hungry after train hours.
+          </p>
+</div>
+<!-- Quick Stats Bento -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm w-full lg:w-auto">
+<div class="bg-primary-container p-space-sm rounded-lg flex flex-col items-center text-center">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary-container">128</span>
+<span class="font-caption text-caption text-primary-fixed-dim uppercase tracking-wider">Curated Spots</span>
+</div>
+<div class="bg-primary-container p-space-sm rounded-lg flex flex-col items-center text-center">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary-container">42</span>
+<span class="font-caption text-caption text-primary-fixed-dim uppercase tracking-wider">Transit Stations</span>
+</div>
+<div class="bg-primary-container p-space-sm rounded-lg flex flex-col items-center text-center col-span-2 sm:col-span-1">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary-container">&lt; 400m</span>
+<span class="font-caption text-caption text-primary-fixed-dim uppercase tracking-wider">Max Walk Radius</span>
+</div>
+</div>
+</div>
+<!-- Map Viewport Container -->
+<div class="relative w-full h-[420px] bg-surface-container">
+<!-- Interactive Map Pipeline Directive -->
+<div class="w-full h-full bg-cover bg-center" data-location="Yaowarat Road, Bangkok, Thailand" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6A_JBwjclW3_Msnp-RoEMucxlcTI2od-DQ9u_HIETWm3cxzBFkCigifhUKdWR6pEyaInFQetG8BJdQJ2NFywO3RGpFj83YONtTLdEOwEXZpD2ZO_uhDYo-iaoZX2UA2Y2Giebuh7MTGXl5cfssQIns8W2yaHZuYWTXPxB4VH3hdOKynBhS-PRtoTHVfMEK6Sw4LDwkxvjhtc-Ba6-nDdi_eJNlrkcL7h3fukvq5XkixGE7UigZ0JyOg')">
+<!-- Ambient Map Floating UI Controls -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent pointer-events-none"></div>
+<!-- Interactive Station Selector Pills -->
+<div class="absolute top-space-md left-space-md flex flex-wrap gap-space-2xs z-20">
+<button class="bg-primary-container/95 text-on-primary font-label-md text-label-md px-space-sm py-space-2xs rounded-lg shadow-sm backdrop-blur flex items-center gap-1 border-0">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> MRT Blue Line Focus
+            </button>
+<button class="bg-surface/90 text-primary font-label-md text-label-md px-space-sm py-space-2xs rounded-lg shadow-sm backdrop-blur flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> BTS Sukhumvit
+            </button>
+<button class="bg-surface/90 text-primary font-label-md text-label-md px-space-sm py-space-2xs rounded-lg shadow-sm backdrop-blur flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span> Chao Phraya River
+            </button>
+</div>
+<!-- Floating Pin Card Example -->
+<div class="absolute bottom-space-md left-space-md right-space-md sm:right-auto sm:w-96 bg-surface-container-lowest text-on-surface p-space-md rounded-xl shadow-lg z-20">
+<div class="flex items-center justify-between mb-space-2xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-ticker text-label-ticker uppercase font-bold">Featured Pin</span>
+<span class="font-label-md text-label-md text-secondary font-bold">4.9 ★</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary">Jok Kitchen (Gourmet Dim Sum)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Secret 2-table shophouse behind Mangkon Kammalawat temple.</p>
+<div class="mt-space-xs flex items-center justify-between pt-space-xs border-t-0 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">directions_walk</span> 180m from Wat Mangkon Station</span>
+<a class="text-secondary font-bold hover:underline" href="#">Get Directions</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Reader Reviews & Community Picks -->
+<section class="w-full mb-space-xl">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs font-label-ticker text-label-ticker uppercase text-secondary font-bold">
+<span class="material-symbols-outlined text-base">rate_review</span> Commuter Community Feedback
+        </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">
+          Verified Resident &amp; Commuter Picks
+        </h2>
+</div>
+<button class="bg-surface-container hover:bg-surface-variant text-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md font-bold transition-colors">
+        Submit Your Review
+      </button>
+</div>
+<!-- Review Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">2 days ago</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary">"Khao Gaeng Jake Pue: Worth the plastic stool wait"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "The yellow curry with pork ribs served on wooden benches on Yaowarat’s sidewalk is unbeatable. Exactly 4 minutes brisk stroll from MRT Wat Mangkon. Arrive at 3:15 PM before the red table queue begins."
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs">NL</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">Nichapat L.</div>
+<div class="font-caption text-caption text-on-surface-variant">Daily Commuter • Silom Line</div>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">5 days ago</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary">"Nana Coffee Roasters Ari: Architectural bliss"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "The stepped garden design makes this the finest remote work cafe in Phaya Thai district. Their house-blend cold brew paired with morning sunshine is worth the 7-minute walk from Ari station exit 3."
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">CW</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">Calvin Wong</div>
+<div class="font-caption text-caption text-on-surface-variant">Bangkok Expat • Resident Critic</div>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">1 week ago</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary">"Song Wat Road Art Walk: Best Sunday in months"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "Followed the BML itinerary verbatim last Sunday. The contrast between ancient spice merchants and modern gallery installations is unmatched anywhere in Southeast Asia. Completely walkable without a car."
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold text-xs">EM</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">Elena Moretti</div>
+<div class="font-caption text-caption text-on-surface-variant">Cultural Traveler • Italy</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: BML Gastronomy Newsletter Callout -->
+<section class="w-full bg-surface-container-high rounded-xl p-space-lg md:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-2xs max-w-lg">
+<div class="flex items-center gap-space-xs text-primary font-label-ticker text-label-ticker uppercase font-bold">
+<span class="material-symbols-outlined text-secondary">notifications_active</span> Weekly Weekend Dining Bulletin
+      </div>
+<h3 class="font-headline-lg text-headline-lg font-bold text-primary">
+        Get Friday’s Secret Reservation Drops &amp; Weekend Routes
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Every Thursday at 11:00 AM, BML subscribers receive newly verified speakeasy codes, popup dining events, and transit updates before general release.
+      </p>
+</div>
+<div class="flex flex-col sm:flex-row w-full md:w-auto gap-space-xs">
+<input class="px-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded-lg font-body-sm text-body-sm outline-none w-full sm:w-72 shadow-sm focus:ring-1 focus:ring-primary" placeholder="commuter@bangkok.com" type="email"/>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold px-space-lg py-space-xs rounded-lg transition-colors whitespace-nowrap shadow-sm">
+        Join 28,400+ Foodies
+      </button>
+</div>
+</section>
+</div>
+<!-- Interactive Client-side filter handler -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const pills = document.querySelectorAll('.filter-pill');
+    const badge = document.getElementById('filterCountBadge');
+    const resetBtn = document.getElementById('resetFiltersBtn');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', (e) => {
+        const type = pill.getAttribute('data-type');
+        const siblingPills = document.querySelectorAll(`.filter-pill[data-type="${type}"]`);
+        
+        siblingPills.forEach(p => {
+          p.classList.remove('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+          p.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+
+        pill.classList.add('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+        pill.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+
+        // Randomized count response simulation for interactive feel
+        const counts = [18, 14, 9, 6, 23, 11];
+        const randomCount = counts[Math.floor(Math.random() * counts.length)];
+        if (badge) {
+          badge.textContent = `${randomCount} Active Spots`;
+        }
+      });
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        pills.forEach(p => {
+          if (p.getAttribute('data-value') === 'all') {
+            p.classList.add('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+            p.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+          } else {
+            p.classList.remove('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+            p.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          }
+        });
+        if (badge) {
+          badge.textContent = '120+ Active Spots';
+        }
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-3xl py-space-2xl text-on-surface"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container font-headline-sm text-headline-sm font-bold">BML</div><span class="font-headline-sm text-headline-sm tracking-tight text-primary">BANGKOK METRO LIFE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant pr-space-xl">Independent, authoritative urban journalism capturing the pulse, architecture, culture, and transit landscape of Southeast Asia's premier metropolitan hub.</p><div class="flex flex-col gap-space-xs"><div class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">BML Morning Dispatch</div><div class="flex max-w-sm gap-space-xs"><input class="bg-surface-container-lowest px-space-sm py-space-xs font-body-sm text-body-sm rounded-lg flex-1 outline-none text-on-surface focus:ring-1 focus:ring-primary" placeholder="Your email address" type="email"/><button class="bg-primary text-on-primary px-space-md py-space-xs font-label-md text-label-md rounded-lg hover:bg-primary-container transition-colors">Subscribe</button></div></div></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">News Desks</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">City Governance</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Urban Real Estate</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Economy &amp; Retail</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Arts &amp; Heritage</a></li><li><a class="hover:text-on-surface transition-colors" data-path="general" href="#">Environment &amp; Climate</a></li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">Transit &amp; City</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">BTS SkyTrain Radar</a></li><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">MRT Blue &amp; Purple Lines</a></li><li><a class="hover:text-on-surface transition-colors" data-path="transportation" href="#">Chao Phraya Express</a></li><li><a class="hover:text-on-surface transition-colors" data-path="travel" href="#">Neighborhood Guides</a></li><li><a class="hover:text-on-surface transition-colors" data-path="food" href="#">Night Market Maps</a></li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary mb-space-sm">About &amp; Connect</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="about-bml" href="#">About BML</a></li><li><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Editorial Standards</a></li><li><a class="hover:text-on-surface transition-colors" data-path="contact-newsroom" href="#">Newsroom Contact</a></li><li><a class="hover:text-on-surface transition-colors" data-path="advertising" href="#">Partner &amp; Advertise</a></li><li><a class="hover:text-on-surface transition-colors" data-path="social-media" href="#">Community Dispatch</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-caption text-caption text-on-surface-variant"><div>© 2024 Bangkok Metro Life (BML) Publishing Group Co., Ltd. All rights reserved. Bangkok Edition.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="editorial-guidelines" href="#">Ethics Policy</a></div></div></div></footer></body></html>
+
+<!-- Transportation Hub - Urban Mobility & Rail Network -->
